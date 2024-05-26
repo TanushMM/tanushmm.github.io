@@ -6,6 +6,7 @@ import Projects from "./projects/Projects";
 import Resume from "./resume/Resume";
 import Testimonial from "./tesimonial/Testimonial";
 import Navbar from "./navbar/Navbar";
+import FooterBottom from "./footer/FooterBottom";
 
 
 
@@ -21,6 +22,7 @@ const Main = () => {
             <Testimonial />
             <Contact />
             <Footer />
+            <FooterBottom/>
         </div>
         </div>
     );

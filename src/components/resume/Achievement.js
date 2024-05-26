@@ -25,7 +25,7 @@ const Achievement = () => {
             This competition experience honed my teamwork and problem-solving skills."
           />
           <ResumeCard
-            title="250+ Data Structures and Algorithm Question Solved"
+            title="380+ Data Structures and Algorithm Question Solved"
             subTitle="Leetcode"
             result="January 2024 - Present"
             des="Sharpened problem-solving skills by tackling over 
@@ -52,12 +52,12 @@ const Achievement = () => {
             des="Strong foundation in business English, London-tested (BEC Preliminary)."
           />
           <ResumeCard
-            title="Microsoft Azure Data Fundamentals"
-            subTitle="Microsoft"
-            result="September 2022"
-            des="Possess a strong foundation in cloud data concepts, verified by Microsoft. 
-            This certification equips me to design and implement 
-            data solutions leveraging Azure services."
+            title="Excel Essential Training"
+            subTitle="LinkedIn Learning"
+            result="August 2024"
+            des="Completed Excel Essential Training by LinkedIn Learning in August 2023, 
+            gaining proficiency in data analysis, visualization, 
+            and advanced spreadsheet functions."
           />
           <ResumeCard
             title="Statistics"

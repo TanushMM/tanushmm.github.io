@@ -31,16 +31,16 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-14">
         <ProjectsCard
           title="DIGIT RECOGNIZER USING CONVOLUTION NEURAL NETWORK"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des="Handwritten digit recognition using CNNs and MNIST dataset, 
+          achieving high accuracy for practical OCR applications."
           src={projectTwo}
           link="https://github.com/TanushMM/Digit-Recognition-Using-Convolution-Neural-Network"
           link2={"/digitrecognizer"}
         />
         <ProjectsCard
           title="DATA PREPROCESSING AND DIMENSIONALITY REDUCTION USING PCA"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des="Vehicle dataset analysis using PCA and linear regression to 
+          explore dimensionality reduction and model performance."
           src={projectThree}
           link="https://github.com/TanushMM/Data-Preprocessing-And-Dimensionality-Reduction-Using-PCA"
           link2={"/pca"}
