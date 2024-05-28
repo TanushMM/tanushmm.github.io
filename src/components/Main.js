@@ -21,7 +21,7 @@ const Main = () => {
             <Resume />
             <Testimonial />
             <Contact />
-            <Footer />
+            {/* <Footer /> */}
             <FooterBottom/>
         </div>
         </div>
