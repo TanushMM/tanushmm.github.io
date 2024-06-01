@@ -15,15 +15,53 @@ const Experience = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Internship Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <ResumeCard
+          title="Data Science Internship - Current Position"
+          subTitle="Unified Mentor Private Limited - (June 2024 - September 2024)"
+          result="Gurugram, Haryana, India [Remote]"
+          des="I am currently interning as a Data Science Intern at Unified Mentor Private Limited. During this internship, I have been gaining practical experience in applying data analysis techniques and problem-solving skills to real-world projects. Specifically, I have utilized my data analysis skills to derive valuable insights from restaurant datasets. This hands-on experience has significantly enhanced my ability to tackle real-world challenges using data-driven approaches."
+          />
+
           <ResumeCard
-            title="Data Science Intern"
-            subTitle="Cognifyz Technologies - (September 2023 - October 2023)"
-            result="Chennai, India [Remote]"
+          title="Data Analyst Internship - Current Position"
+          subTitle="Intervie Tech - (June 2024 - July 2024)"
+          result="Patiala, Punjab, India [Remote]"
+          des="I am currently interning as a Data Analyst at Intervie Tech. Throughout this internship, I have been actively involved in applying data analysis methodologies and problem-solving techniques to real-world projects. My tasks have included extracting meaningful insights from restaurant datasets, further refining my ability to address practical problems through data-driven strategies."
+          />
+
+          <ResumeCard
+          title="Data Science Internship"
+          subTitle="Cognifyz Technologies - (September 2023 - October 2023)"
+          result="Chennai, Tamil Nadu, India [Remote]"
+          des="During my internship at Cognifyz Technologies, I gained valuable experience in applying data analysis and problem-solving skills to real-world scenarios. I utilized advanced data analysis techniques to extract actionable insights from restaurant datasets. This internship significantly contributed to enhancing my proficiency in solving practical problems using data-driven methodologies."
+          />
+        {/* <ResumeCard
+            title="Data Science Intern - Ongoing"
+            subTitle="Unified Mentor Private Limited - (June 2024 - September 2024)"
+            result="Gurugram, Haryana, India [Remote]"
             des="Gained hands-on experience applying data analysis 
             and problem-solving to real-world projects. 
             Leveraged data analysis skills to extract insights from restaurant datasets. 
             This experience honed my ability to solve real-world problems through data-driven approaches."
           />
+          <ResumeCard
+            title="Data Analyst Intern - Ongoing"
+            subTitle="Intervie Tech - (June 2024 - July 2024)"
+            result="Patiala, Punjab, India [Remote]"
+            des="Gained hands-on experience applying data analysis 
+            and problem-solving to real-world projects. 
+            Leveraged data analysis skills to extract insights from restaurant datasets. 
+            This experience honed my ability to solve real-world problems through data-driven approaches."
+          />
+          <ResumeCard
+            title="Data Science Intern"
+            subTitle="Cognifyz Technologies - (September 2023 - October 2023)"
+            result="Chennai, Tamil Nadu, India [Remote]"
+            des="Gained hands-on experience applying data analysis 
+            and problem-solving to real-world projects. 
+            Leveraged data analysis skills to extract insights from restaurant datasets. 
+            This experience honed my ability to solve real-world problems through data-driven approaches."
+          /> */}
           {/* <ResumeCard
             title="Web Developer & Trainer"
             subTitle="Apple Developer Team - (2012 - 2016)"

@@ -7,9 +7,9 @@ import Experience from "./Experience";
 import Hobbies from "./Hobbies";
 
 const Resume = () => {
-   const [educationData, setEducationData] = useState(true);
+   const [educationData, setEducationData] = useState(false);
    const [skillData, setSkillData] = useState(false);
-   const [experienceData, setExperienceData] = useState(false);
+   const [experienceData, setExperienceData] = useState(true);
    const [achievementData, setAchievementData] = useState(false);
    const [hobbiesData, setHobbiesData] = useState(false);
   return (
@@ -23,21 +23,21 @@ const Resume = () => {
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5">
-          <li
+        <li
             onClick={() =>
-              setEducationData(true) &
+              setEducationData(false) &
               setSkillData(false) &
-              setExperienceData(false) &
+              setExperienceData(true) &
               setAchievementData(false) &
               setHobbiesData(false)
             }
             className={`${
-              educationData
+              experienceData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
             } resumeLi`}
           >
-            Education
+            Experience
           </li>
           <li
             onClick={() =>
@@ -55,19 +55,19 @@ const Resume = () => {
           </li>
           <li
             onClick={() =>
-              setEducationData(false) &
+              setEducationData(true) &
               setSkillData(false) &
-              setExperienceData(true) &
+              setExperienceData(false) &
               setAchievementData(false) &
               setHobbiesData(false)
             }
             className={`${
-              experienceData
+              educationData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
             } resumeLi`}
           >
-            Experience
+            Education
           </li>
           <li
             onClick={() =>
@@ -103,10 +103,10 @@ const Resume = () => {
           </li>
         </ul>
       </div>
+      {experienceData && <Experience />}
       {educationData && <Education />}
       {skillData && <Skills />}
       {achievementData && <Achievement />}
-      {experienceData && <Experience />}
       {hobbiesData && <Hobbies />}
  
     </section>
