@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiJava, SiPandas, SiPython, SiMicrosoftexcel } from "react-icons/si";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaMicrosoft } from "react-icons/fa";
+import { SiJava, SiPandas, SiPython, SiMicrosoftexcel, SiLeetcode} from "react-icons/si";
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
@@ -47,6 +47,12 @@ const LeftBanner = () => {
             </span>
             <span className="bannerIcon">
               <a href="https://www.linkedin.com/in/tanush-mm/" target="_blank"><FaLinkedinIn /></a>
+            </span>
+            <span className="bannerIcon">
+              <a href="https://learn.microsoft.com/en-us/users/tanushmm/" target="_blank"><FaMicrosoft /></a>
+            </span>
+            <span className="bannerIcon">
+              <a href="https://leetcode.com/u/TanushMM/" target="_blank"><SiLeetcode /></a>
             </span>
           </div>
         </div>
