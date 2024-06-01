@@ -9,7 +9,7 @@ const LinearRegression = () => {
   };
   return (
 <div className={styles.component}>
-<button onClick={handleHomeClick}>Home</button>
+<button onClick={handleHomeClick} className={styles.homeButton}>Home</button>
 <h1>Introduction to Linear Regression Pairs Trading</h1>
 
 <p>Linear regression pairs trading is a quantitative trading strategy that aims to profit from the relative price movements of two assets by exploiting the statistical relationship between them. In this trading setup, we utilize linear regression analysis to identify pairs of assets that exhibit a strong historical correlation in their price movements. The basic premise is to buy one asset while simultaneously selling short the other when their prices deviate from their historical relationship, and then close the positions when the prices revert to their mean relationship.</p>
