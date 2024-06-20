@@ -18,7 +18,7 @@ const Resume = () => {
         <Title title="" des="My Resume"/> 
         <button 
         className="text-xl uppercase text-designColor font-semibold mt-1 px-4 py-2 rounded-lg bg-red-50 text-white hover:bg-red-300">
-       <a href="https://drive.google.com/file/d/1em_E_vVCe5SQmuGsyZ1B-AD7dC9mY2P0/view?usp=drive_link" target="_blank">Download my Resume</a>
+       <a href="https://drive.google.com/file/d/1vSvo1B6tzF2gU2ishnoHdx7qzRdSqL1c/view?usp=sharing" target="_blank">Download my Resume</a>
       </button>
       </div>
       <div>
