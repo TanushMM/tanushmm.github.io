@@ -1,70 +1,66 @@
 import React from 'react';
 import MNIST_Dataset from "../../assets/images/CNN_Project/MNIST_Dataset.png";
-import styles from './DigitRecognizer.module.css';
+import styles from './css.module.css';
 
 const DigitRecognizer = () => {
-  const handleHomeClick = () => {
-    window.history.back(); // Navigate to home page
-  };
   return (
     <div className={styles.component}>
-      <button onClick={handleHomeClick} className={styles.homeButton}>Home</button>
-      <h1>Digit Recognition with Convolutional Neural Networks (CNNs) and MNIST dataset</h1>
-      <p>Optical Character Recognition (OCR) is a branch of computer 
-      vision that deals with recognizing text from images. 
-      Handwritten digit recognition (HDR) is a fundamental task 
-      in OCR with numerous applications, including postal code recognition, 
-      automatic bank check processing, and self-driving cars. 
-      Convolutional Neural Networks (CNNs) have emerged as a powerful 
-      tool for achieving high accuracy in HDR tasks.</p>
+      <h1>Digit Recognition with Convolutional Neural Networks (CNN) and MNIST dataset</h1>
+      <p>Optical Character Recognition (OCR) is a branch of computer
+        vision that deals with recognizing text from images.
+        Handwritten digit recognition (HDR) is a fundamental task
+        in OCR with numerous applications, including postal code recognition,
+        automatic bank check processing, and self-driving cars.
+        Convolutional Neural Networks (CNN) have emerged as a powerful
+        tool for achieving high accuracy in HDR tasks.</p>
 
       <h1>The MNIST Dataset</h1>
 
-      <img src={MNIST_Dataset} alt="MNIST Dataset"/>
-      <p>The MNIST dataset is a widely used benchmark for handwritten 
-        digit recognition. It consists of 70,000 images of handwritten 
-        digits (from 0 to 9) collected from school children. Each image 
-        is a 28x28 pixel grayscale image, with each pixel intensity value 
-        ranging from 0 (black) to 255 (white). The dataset is further 
-        divided into a training set of 60,000 images and a testing set 
+      <img src={MNIST_Dataset} alt="MNIST Dataset" />
+      <p>The MNIST dataset is a widely used benchmark for handwritten
+        digit recognition. It consists of 70,000 images of handwritten
+        digits (from 0 to 9) collected from school children. Each image
+        is a 28x28 pixel grayscale image, with each pixel intensity value
+        ranging from 0 (black) to 255 (white). The dataset is further
+        divided into a training set of 60,000 images and a testing set
         of 10,000 images.</p>
 
-      <h1>Understanding Convolutional Neural Networks (CNNs)</h1>
-      <p>CNNs are a specific type of artificial neural network 
-        architecture particularly well-suited for image recognition 
-        tasks. They leverage the inherent properties of images, such 
-        as spatial locality and shared weights, to achieve high 
-        performance. Here's a breakdown of the key components of 
+      <h1>Understanding Convolutional Neural Networks (CNN)</h1>
+      <p>CNN are a specific type of artificial neural network
+        architecture particularly well-suited for image recognition
+        tasks. They leverage the inherent properties of images, such
+        as spatial locality and shared weights, to achieve high
+        performance. Here's a breakdown of the key components of
         a CNN for digit recognition:</p>
 
       <ul>
-        <li><b className={styles.highlight}>Convolutional Layers:</b> These layers apply filters (kernels) 
-        to the input image, extracting features like edges, lines, and curves. 
-        The filter slides across the image, computing the element-wise product 
-        with the input at each position. The result is a feature map that 
-        captures specific aspects of the image.</li>
+        <li><b className={styles.highlight}>Convolutional Layers:</b> These layers apply filters (kernels)
+          to the input image, extracting features like edges, lines, and curves.
+          The filter slides across the image, computing the element-wise product
+          with the input at each position. The result is a feature map that
+          captures specific aspects of the image.</li>
 
-        <li><b className={styles.highlight}>Pooling Layers:</b> These layers downsample the 
-        feature maps, reducing their dimensionality and computational 
-        complexity. They achieve this by applying a pooling operation 
-        (e.g., average or max pooling) over small regions of the feature map.</li>
+        <li><b className={styles.highlight}>Pooling Layers:</b> These layers downsample the
+          feature maps, reducing their dimensionality and computational
+          complexity. They achieve this by applying a pooling operation
+          (e.g., average or max pooling) over small regions of the feature map.</li>
 
-        <li><b className={styles.highlight}>Activation Layers:</b> These layers introduce 
-        non-linearity into the network, allowing it to learn more 
-        complex relationships between features. Common activation 
-        functions used in CNNs include ReLU (Rectified Linear Unit) 
-        and sigmoid.</li>
+        <li><b className={styles.highlight}>Activation Layers:</b> These layers introduce
+          non-linearity into the network, allowing it to learn more
+          complex relationships between features. Common activation
+          functions used in CNN include ReLU (Rectified Linear Unit)
+          and sigmoid.</li>
 
-        <li><b className={styles.highlight}>Flatten Layer:</b> This layer transforms the 
-        multi-dimensional feature maps from the convolutional 
-        layers into a one-dimensional vector suitable for feeding 
-        into the fully connected layers.</li>
+        <li><b className={styles.highlight}>Flatten Layer:</b> This layer transforms the
+          multi-dimensional feature maps from the convolutional
+          layers into a one-dimensional vector suitable for feeding
+          into the fully connected layers.</li>
 
-        <li><b className={styles.highlight}>Fully Connected Layers:</b> These layers perform 
-        traditional matrix multiplication operations, similar to 
-        those found in standard neural networks. They combine the 
-        extracted features from the convolutional layers to classify 
-        the input image into a specific digit class (0-9).</li>
+        <li><b className={styles.highlight}>Fully Connected Layers:</b> These layers perform
+          traditional matrix multiplication operations, similar to
+          those found in standard neural networks. They combine the
+          extracted features from the convolutional layers to classify
+          the input image into a specific digit class (0-9).</li>
       </ul>
 
       <h2>Model Training and Evaluation</h2>
@@ -183,7 +179,7 @@ const DigitRecognizer = () => {
       <p>These approaches collectively contribute to building a robust handwritten digit recognizer that can handle real-world challenges and deliver accurate predictions.</p>
 
       <h1>Conclusion:</h1>
-      <p>Handwritten digit recognition using CNNs and the MNIST dataset is a foundational application of deep learning. CNNs leverage their hierarchical feature learning capabilities to achieve high accuracy in this task. By understanding the key components of CNNs, preprocessing techniques, and model training strategies, you can build and deploy effective digit recognition systems.</p>
+      <p>Handwritten digit recognition using CNN and the MNIST dataset is a foundational application of deep learning. CNN leverage their hierarchical feature learning capabilities to achieve high accuracy in this task. By understanding the key components of CNN, preprocessing techniques, and model training strategies, you can build and deploy effective digit recognition systems.</p>
       <p>Furthermore, applying advanced techniques and addressing real-world challenges can enhance the performance of handwritten digit recognizers, making them applicable to various practical scenarios.</p>
     </div>
   );
@@ -199,61 +195,61 @@ export default DigitRecognizer;
 // const DigitRecognizer = () => {
 //   return (
 //     <div>
-//       <h1>Digit Recognition with Convolutional Neural Networks (CNNs) and MNIST dataset</h1>
-//       <p>Optical Character Recognition (OCR) is a branch of computer 
-//       vision that deals with recognizing text from images. 
-//       Handwritten digit recognition (HDR) is a fundamental task 
-//       in OCR with numerous applications, including postal code recognition, 
-//       automatic bank check processing, and self-driving cars. 
-//       Convolutional Neural Networks (CNNs) have emerged as a powerful 
+//       <h1>Digit Recognition with Convolutional Neural Networks (CNN) and MNIST dataset</h1>
+//       <p>Optical Character Recognition (OCR) is a branch of computer
+//       vision that deals with recognizing text from images.
+//       Handwritten digit recognition (HDR) is a fundamental task
+//       in OCR with numerous applications, including postal code recognition,
+//       automatic bank check processing, and self-driving cars.
+//       Convolutional Neural Networks (CNN) have emerged as a powerful
 //       tool for achieving high accuracy in HDR tasks.</p>
 
 //       <h1>The MNIST Dataset</h1>
 
 //       <img src={MNIST_Dataset}></img>
-//       <p>The MNIST dataset is a widely used benchmark for handwritten 
-//         digit recognition. It consists of 70,000 images of handwritten 
-//         digits (from 0 to 9) collected from school children. Each image 
-//         is a 28x28 pixel grayscale image, with each pixel intensity value 
-//         ranging from 0 (black) to 255 (white). The dataset is further 
-//         divided into a training set of 60,000 images and a testing set 
+//       <p>The MNIST dataset is a widely used benchmark for handwritten
+//         digit recognition. It consists of 70,000 images of handwritten
+//         digits (from 0 to 9) collected from school children. Each image
+//         is a 28x28 pixel grayscale image, with each pixel intensity value
+//         ranging from 0 (black) to 255 (white). The dataset is further
+//         divided into a training set of 60,000 images and a testing set
 //         of 10,000 images.</p>
 
-//       <h1>Understanding Convolutional Neural Networks (CNNs)</h1>
-//       <p>CNNs are a specific type of artificial neural network 
-//         architecture particularly well-suited for image recognition 
-//         tasks. They leverage the inherent properties of images, such 
-//         as spatial locality and shared weights, to achieve high 
-//         performance. Here's a breakdown of the key components of 
+//       <h1>Understanding Convolutional Neural Networks (CNN)</h1>
+//       <p>CNN are a specific type of artificial neural network
+//         architecture particularly well-suited for image recognition
+//         tasks. They leverage the inherent properties of images, such
+//         as spatial locality and shared weights, to achieve high
+//         performance. Here's a breakdown of the key components of
 //         a CNN for digit recognition:</p>
 
 //       <ul>
-//         <li><b>Convolutional Layers:</b> These layers apply filters (kernels) 
-//         to the input image, extracting features like edges, lines, and curves. 
-//         The filter slides across the image, computing the element-wise product 
-//         with the input at each position. The result is a feature map that 
+//         <li><b>Convolutional Layers:</b> These layers apply filters (kernels)
+//         to the input image, extracting features like edges, lines, and curves.
+//         The filter slides across the image, computing the element-wise product
+//         with the input at each position. The result is a feature map that
 //         captures specific aspects of the image.</li>
 
-//         <li><b>Pooling Layers:</b> These layers downsample the 
-//         feature maps, reducing their dimensionality and computational 
-//         complexity. They achieve this by applying a pooling operation 
+//         <li><b>Pooling Layers:</b> These layers downsample the
+//         feature maps, reducing their dimensionality and computational
+//         complexity. They achieve this by applying a pooling operation
 //         (e.g., average or max pooling) over small regions of the feature map.</li>
 
-//         <li><b>Activation Layers:</b> These layers introduce 
-//         non-linearity into the network, allowing it to learn more 
-//         complex relationships between features. Common activation 
-//         functions used in CNNs include ReLU (Rectified Linear Unit) 
+//         <li><b>Activation Layers:</b> These layers introduce
+//         non-linearity into the network, allowing it to learn more
+//         complex relationships between features. Common activation
+//         functions used in CNN include ReLU (Rectified Linear Unit)
 //         and sigmoid.</li>
 
-//         <li><b>Flatten Layer:</b> This layer transforms the 
-//         multi-dimensional feature maps from the convolutional 
-//         layers into a one-dimensional vector suitable for feeding 
+//         <li><b>Flatten Layer:</b> This layer transforms the
+//         multi-dimensional feature maps from the convolutional
+//         layers into a one-dimensional vector suitable for feeding
 //         into the fully connected layers.</li>
 
-//         <li><b>Fully Connected Layers:</b> These layers perform 
-//         traditional matrix multiplication operations, similar to 
-//         those found in standard neural networks. They combine the 
-//         extracted features from the convolutional layers to classify 
+//         <li><b>Fully Connected Layers:</b> These layers perform
+//         traditional matrix multiplication operations, similar to
+//         those found in standard neural networks. They combine the
+//         extracted features from the convolutional layers to classify
 //         the input image into a specific digit class (0-9).</li>
 //       </ul>
 
@@ -269,7 +265,7 @@ export default DigitRecognizer;
 // from keras.layers import Dense, Conv2D, MaxPool2D, Flatten, Dropout
 
 
-// #Getting the data 
+// #Getting the data
 
 // (X_train, y_train),(X_test, y_test) = mnist.load_data()
 
@@ -287,7 +283,7 @@ export default DigitRecognizer;
 // y_train = keras.utils.np_utils.to_categorical(y_train)
 // y_test = keras.utils.np_utils.to_categorical(y_test)
 
-// #Model 
+// #Model
 // model = Sequential()
 
 // model.add(Conv2D(32,(3,3), activation = 'relu',input_shape = (28,28,1)))

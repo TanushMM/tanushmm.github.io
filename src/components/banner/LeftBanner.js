@@ -1,11 +1,11 @@
 import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaMicrosoft } from "react-icons/fa";
+import { FaLinkedinIn, FaMicrosoft, FaMediumM } from "react-icons/fa";
 import { SiJava, SiPandas, SiPython, SiMicrosoftexcel, SiLeetcode} from "react-icons/si";
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Forward Looking Finance Enthusiast.", "Data Scientist.", "Financial Geek."],
+      words: ["Data Science Enthusiast.", "Finance and Stock Market Enthusiast."],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,
@@ -29,7 +29,7 @@ const LeftBanner = () => {
         <p className="text-base font-bodyFont leading-6 tracking-wide">
         Results-Driven and foreward looking Computer Science Student and a fresher 
         in the field of data science with tech skills: Python, Excel, Power BI, Statistics. 
-        I love to read books and i have started solving DSA questions to enhance 
+        I love to read books and I have started solving DSA questions to enhance 
         my technical and problem solving skills.
         </p>
       </div>
@@ -39,14 +39,11 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            {/* <span className="bannerIcon">
-              <FaFacebookF />
-            </span> */}
-            <span className="bannerIcon">
-              <a href="https://twitter.com/tanushmm2004" target="_blank"><FaTwitter /></a>
-            </span>
             <span className="bannerIcon">
               <a href="https://www.linkedin.com/in/tanush-mm/" target="_blank"><FaLinkedinIn /></a>
+            </span>
+            <span className="bannerIcon">
+              <a href="https://medium.com/@tanushmmofficial" target="_blank"><FaMediumM /></a>
             </span>
             <span className="bannerIcon">
               <a href="https://learn.microsoft.com/en-us/users/tanushmm/" target="_blank"><FaMicrosoft /></a>
@@ -54,6 +51,9 @@ const LeftBanner = () => {
             <span className="bannerIcon">
               <a href="https://leetcode.com/u/TanushMM/" target="_blank"><SiLeetcode /></a>
             </span>
+            {/* <span className="bannerIcon">
+              <a href="https://twitter.com/tanushmm2004" target="_blank"><FaTwitter /></a>
+            </span> */}
           </div>
         </div>
         <div>
@@ -62,16 +62,16 @@ const LeftBanner = () => {
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><SiJava /></a>
-            </span>
-            <span className="bannerIcon">
-              <a href="https://en.wikipedia.org/wiki/Microsoft_Excel" target="_blank"><SiMicrosoftexcel /></a>
-            </span>
-            <span className="bannerIcon">
               <a href="https://www.python.org/" target="_blank"><SiPython /></a>
             </span>
             <span className="bannerIcon">
               <a href="https://pypi.org/project/pandas/" target="_blank"><SiPandas /></a>
+            </span>
+            <span className="bannerIcon">
+              <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><SiJava /></a>
+            </span>
+            <span className="bannerIcon">
+              <a href="https://en.wikipedia.org/wiki/Microsoft_Excel" target="_blank"><SiMicrosoftexcel /></a>
             </span>
           </div>
         </div>

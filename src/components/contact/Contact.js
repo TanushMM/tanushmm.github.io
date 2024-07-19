@@ -51,7 +51,8 @@ const Contact = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="CONTACT" des="Contact Me" />
+        <Title des="Contact" />
+        {/* title="CONTACT" */}
       </div>
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">

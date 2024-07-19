@@ -1,126 +1,26 @@
-/* Background color for the entire component
-.component {
-  background-color: rgb(33, 36, 40);
-  color: rgb(188, 231, 246);
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 20px;
-}
-
-
-.component h1, .component h2, .component h3 {
-  color: rgb(255, 1, 63);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 2rem;
-  transition: font-size 0.3s ease;
-}
-
-
-.component .highlight {
-  color: rgb(255, 1, 63);
-  background-color: rgba(255, 1, 63, 0.1);
-  padding: 0 5px;
-  border-radius: 3px;
-}
-
-
-.component p, .component li {
-  text-align: justify;
-  line-height: 1.6;
-}
-
-.component ul {
-  margin-left: 20px;
-}
-
-
-.component img {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  border: 2px solid rgb(188, 231, 246);
-  border-radius: 10px;
-}
-
-
-.component code {
-  background-color: rgba(188, 231, 246, 0.1);
-  color: rgb(188, 231, 246);
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-
-.component h1 {
-  font-size: 2.5rem;
-}
-
-.component h2 {
-  font-size: 2rem;
-}
-
-.component h3 {
-  font-size: 1.75rem;
-}
-
-.component p {
-  font-size: 1rem;
-}
-
-.component li {
-  font-size: 1rem;
-}
-
-
-.component h1:hover, .component h2:hover, .component h3:hover {
-  font-size: 2.7rem;
-}
-
-
-.component div {
-  padding: 20px;
-}
-
-
-.component pre {
-  background-color: rgba(188, 231, 246, 0.1);
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-.homeButton {
-  background-color: #ff1132;
-  border: none; 
-  color: white; 
-  padding: 10px 20px; 
-  text-align: center; 
-  text-decoration: none; 
-  display: inline-block; 
-  font-size: 20px; 
-  margin: 10px 0; 
-  cursor: pointer; 
-  border-radius: 5px; 
-  width: 200px;
-}
-
-.homeButton:hover {
-  background-color: #b00b21; 
-} */
-
-
-
 /* DigitRecognizer.module.css */
 
 /* Background color for the entire component */
 .component {
   background-color: #D9D6D0; /* Light background color */
   color: #403B39; /* Darker text color */
-  font-family: 'Arial', sans-serif;
+  font-family: Georgia, serif;
   margin: 0;
   padding: 20px;
+  max-width: 90%; /* Control width to prevent horizontal scroll */
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+/* Center the main container */
+.container {
+  max-width: 800px; /* Adjust as needed for the dark themed div */
+  margin: 0 auto;
+  background-color: #262321; /* Dark theme background color */
+  color: #D9D6D0; /* Light text color */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 /* Styling for headings */
@@ -184,15 +84,25 @@
 
 .component p {
   font-size: 1rem;
+  font-size: large;
 }
 
 .component li {
   font-size: 1rem;
 }
 
-/* Animation for headings */
-.component h1:hover, .component h2:hover, .component h3:hover {
-  font-size: 2.7rem;
+/* Animation for fade-in during loading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.component {
+  animation: fadeIn 1s ease-in-out;
 }
 
 /* Add some padding to the content */
@@ -227,5 +137,3 @@
 .homeButton:hover {
   background-color: #403B39; /* Slightly lighter on hover */
 }
-
-

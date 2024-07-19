@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import Title from '../layouts/Title';
 import Education from './Education';
 import Skills from './Skills';
@@ -7,23 +7,23 @@ import Experience from "./Experience";
 import Hobbies from "./Hobbies";
 
 const Resume = () => {
-   const [educationData, setEducationData] = useState(false);
-   const [skillData, setSkillData] = useState(false);
-   const [experienceData, setExperienceData] = useState(true);
-   const [achievementData, setAchievementData] = useState(false);
-   const [hobbiesData, setHobbiesData] = useState(false);
+  const [educationData, setEducationData] = useState(false);
+  const [skillData, setSkillData] = useState(false);
+  const [experienceData, setExperienceData] = useState(true);
+  const [achievementData, setAchievementData] = useState(false);
+  const [hobbiesData, setHobbiesData] = useState(false);
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex flex-col justify-center items-center text-center mb-8">
-        <Title title="" des="My Resume"/> 
-        <button 
-        className="text-xl uppercase text-designColor font-semibold mt-1 px-4 py-2 rounded-lg bg-red-50 text-white hover:bg-red-300">
-       <a href="https://drive.google.com/file/d/1vSvo1B6tzF2gU2ishnoHdx7qzRdSqL1c/view?usp=sharing" target="_blank">Download my Resume</a>
-      </button>
+        <Title title="" des="My Resume" />
+        <button
+          className="text-xl uppercase text-designColor font-semibold mt-1 px-4 py-2 rounded-lg bg-red-50 text-white hover:bg-red-300">
+          <a href="https://drive.google.com/file/d/1_mM-8aLn_W-C2IdDLl4CcrL68beXskIu/view?usp=sharing" target="_blank">Download my Resume</a>
+        </button>
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5">
-        <li
+          <li
             onClick={() =>
               setEducationData(false) &
               setSkillData(false) &
@@ -31,11 +31,10 @@ const Resume = () => {
               setAchievementData(false) &
               setHobbiesData(false)
             }
-            className={`${
-              experienceData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi`}
+            className={`${experienceData
+              ? "border-designColor rounded-lg"
+              : "border-transparent"
+              } resumeLi`}
           >
             Experience
           </li>
@@ -47,9 +46,8 @@ const Resume = () => {
               setAchievementData(false) &
               setHobbiesData(false)
             }
-            className={`${
-              skillData ? "border-designColor rounded-lg" : "border-transparent"
-            } resumeLi`}
+            className={`${skillData ? "border-designColor rounded-lg" : "border-transparent"
+              } resumeLi`}
           >
             Professional Skills
           </li>
@@ -61,11 +59,10 @@ const Resume = () => {
               setAchievementData(false) &
               setHobbiesData(false)
             }
-            className={`${
-              educationData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi`}
+            className={`${educationData
+              ? "border-designColor rounded-lg"
+              : "border-transparent"
+              } resumeLi`}
           >
             Education
           </li>
@@ -77,11 +74,10 @@ const Resume = () => {
               setAchievementData(true) &
               setHobbiesData(false)
             }
-            className={`${
-              achievementData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi`}
+            className={`${achievementData
+              ? "border-designColor rounded-lg"
+              : "border-transparent"
+              } resumeLi`}
           >
             Achievements & Certifications
           </li>
@@ -93,11 +89,10 @@ const Resume = () => {
               setAchievementData(false) &
               setHobbiesData(true)
             }
-            className={`${
-              hobbiesData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi`}
+            className={`${hobbiesData
+              ? "border-designColor rounded-lg"
+              : "border-transparent"
+              } resumeLi`}
           >
             Hobbies
           </li>
@@ -108,7 +103,7 @@ const Resume = () => {
       {skillData && <Skills />}
       {achievementData && <Achievement />}
       {hobbiesData && <Hobbies />}
- 
+
     </section>
   );
 }

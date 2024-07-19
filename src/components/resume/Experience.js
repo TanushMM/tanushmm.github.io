@@ -11,23 +11,17 @@ const Experience = () => {
     >
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">Sep 2023 - Oct 2023</p>
+          <p className="text-sm text-designColor tracking-[4px]">Sep 2023 - Present</p>
           <h2 className="text-3xl md:text-4xl font-bold">Internship Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-        <ResumeCard
-          title="Data Science Internship - Current Position"
-          subTitle="Unified Mentor Private Limited - (June 2024 - September 2024)"
-          result="Gurugram, Haryana, India [Remote]"
-          des="I am currently interning as a Data Science Intern at Unified Mentor Private Limited. During this internship, I have been gaining practical experience in applying data analysis techniques and problem-solving skills to real-world projects. Specifically, I have utilized my data analysis skills to derive valuable insights from restaurant datasets. This hands-on experience has significantly enhanced my ability to tackle real-world challenges using data-driven approaches."
+          <ResumeCard
+          title="Data Analyst - Internship"
+          subTitle="Intervie Tech Pvt. Ltd. - (June 2024 - July 2024)"
+          result="Patiala, Punjab, India [Remote]"
+          des="I have completed an internship as a Data Analyst at Intervie Tech. During this internship, I led a team in the completion of a data science project addressing present-day Human Resource concerns. I utilized Python, Pandas, and Scikit-Learn to conduct data analysis and create visualizations. Additionally, I coordinated tasks and managed project timelines to ensure successful project delivery, all while enhancing my professional skills in data science through hands-on experience and collaboration."
           />
 
-          <ResumeCard
-          title="Data Analyst Internship - Current Position"
-          subTitle="Intervie Tech - (June 2024 - July 2024)"
-          result="Patiala, Punjab, India [Remote]"
-          des="I am currently interning as a Data Analyst at Intervie Tech. Throughout this internship, I have been actively involved in applying data analysis methodologies and problem-solving techniques to real-world projects. My tasks have included extracting meaningful insights from restaurant datasets, further refining my ability to address practical problems through data-driven strategies."
-          />
 
           <ResumeCard
           title="Data Science Internship"
@@ -35,73 +29,15 @@ const Experience = () => {
           result="Chennai, Tamil Nadu, India [Remote]"
           des="During my internship at Cognifyz Technologies, I gained valuable experience in applying data analysis and problem-solving skills to real-world scenarios. I utilized advanced data analysis techniques to extract actionable insights from restaurant datasets. This internship significantly contributed to enhancing my proficiency in solving practical problems using data-driven methodologies."
           />
-        {/* <ResumeCard
-            title="Data Science Intern - Ongoing"
+
+          {/* <ResumeCard
+            title="Data Science Internship - Current Position"
             subTitle="Unified Mentor Private Limited - (June 2024 - September 2024)"
             result="Gurugram, Haryana, India [Remote]"
-            des="Gained hands-on experience applying data analysis 
-            and problem-solving to real-world projects. 
-            Leveraged data analysis skills to extract insights from restaurant datasets. 
-            This experience honed my ability to solve real-world problems through data-driven approaches."
-          />
-          <ResumeCard
-            title="Data Analyst Intern - Ongoing"
-            subTitle="Intervie Tech - (June 2024 - July 2024)"
-            result="Patiala, Punjab, India [Remote]"
-            des="Gained hands-on experience applying data analysis 
-            and problem-solving to real-world projects. 
-            Leveraged data analysis skills to extract insights from restaurant datasets. 
-            This experience honed my ability to solve real-world problems through data-driven approaches."
-          />
-          <ResumeCard
-            title="Data Science Intern"
-            subTitle="Cognifyz Technologies - (September 2023 - October 2023)"
-            result="Chennai, Tamil Nadu, India [Remote]"
-            des="Gained hands-on experience applying data analysis 
-            and problem-solving to real-world projects. 
-            Leveraged data analysis skills to extract insights from restaurant datasets. 
-            This experience honed my ability to solve real-world problems through data-driven approaches."
-          /> */}
-          {/* <ResumeCard
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCard
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          /> */}
+            des="I am currently interning as a Data Science Intern at Unified Mentor Private Limited. During this internship, I have been gaining practical experience in applying data analysis techniques and problem-solving skills to real-world projects. Specifically, I have utilized my data analysis skills to derive valuable insights from restaurant datasets. This hands-on experience has significantly enhanced my ability to tackle real-world challenges using data-driven approaches."
+            /> */}
         </div>
       </div>
-      {/* <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2001 - 2020</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Trainer Experience</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Gym Instructor"
-            subTitle="Rainbow Gym Center (2015 - 2020)"
-            result="DHAKA"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
-          />
-          <ResumeCard
-            title="Web Developer and Instructor"
-            subTitle="SuperKing College (2010 - 2014)"
-            result="CANADA"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCard
-            title="School Teacher"
-            subTitle="Kingstar Secondary School (2001 - 2010)"
-            result="NEVADA"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
-          />
-        </div>
-      </div> */}
     </motion.div>
   );
 };
