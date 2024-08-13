@@ -1,20 +1,20 @@
 import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaLinkedinIn, FaMicrosoft, FaMediumM } from "react-icons/fa";
-import { SiJava, SiPandas, SiPython, SiMicrosoftexcel, SiLeetcode} from "react-icons/si";
+import { SiJava, SiPython, SiLeetcode, SiDocker, SiAmazonaws } from "react-icons/si";
 
 const LeftBanner = () => {
-    const [text] = useTypewriter({
-      words: ["Data Science Enthusiast.", "Finance and Stock Market Enthusiast."],
-      loop: true,
-      typeSpeed: 20,
-      deleteSpeed: 10,
-      delaySpeed: 2000,
-    });
+  const [text] = useTypewriter({
+    words: ["Data Science Enthusiast.", "Cloud and MLOps Enthusiast.", "Finance and Stock Market Enthusiast."],
+    loop: true,
+    typeSpeed: 20,
+    deleteSpeed: 10,
+    delaySpeed: 2000,
+  });
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
+        {/* <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4> */}
         <h1 className="text-6xl font-bold text-white">
           Hi, I'm <span className="text-designColor capitalize">Tanush Modem Mahesh</span>
         </h1>
@@ -27,10 +27,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-        Results-Driven and foreward looking Computer Science Student and a fresher 
-        in the field of data science with tech skills: Python, Excel, Power BI, Statistics. 
-        I love to read books and I have started solving DSA questions to enhance 
-        my technical and problem solving skills.
+          Results-Driven and foreward looking Computer Science Student and a fresher
+          in the field of data science with tech skills: Python, Excel, Power BI, Statistics.
+          I love to read books and I have started solving DSA questions to enhance
+          my technical and problem solving skills.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -65,13 +65,13 @@ const LeftBanner = () => {
               <a href="https://www.python.org/" target="_blank"><SiPython /></a>
             </span>
             <span className="bannerIcon">
-              <a href="https://pypi.org/project/pandas/" target="_blank"><SiPandas /></a>
+              <a href="https://www.docker.com/" target="_blank"><SiDocker /></a>
+            </span>
+            <span className="bannerIcon">
+              <a href="https://aws.amazon.com/" target="_blank"><SiAmazonaws /></a>
             </span>
             <span className="bannerIcon">
               <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><SiJava /></a>
-            </span>
-            <span className="bannerIcon">
-              <a href="https://en.wikipedia.org/wiki/Microsoft_Excel" target="_blank"><SiMicrosoftexcel /></a>
             </span>
           </div>
         </div>

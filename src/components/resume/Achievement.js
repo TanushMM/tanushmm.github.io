@@ -54,7 +54,7 @@ const Achievement = () => {
           <ResumeCard
             title="Excel Essential Training"
             subTitle="LinkedIn Learning"
-            result="August 2024"
+            result="August 2023"
             des="Completed Excel Essential Training by LinkedIn Learning in August 2023, 
             gaining proficiency in data analysis, visualization, 
             and advanced spreadsheet functions."

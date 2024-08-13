@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiVisualstudiocode, SiGithub, SiLeetcode, SiMysql, SiJava, SiPython } from "react-icons/si";
+import { SiVisualstudiocode, SiGithub, SiLeetcode, SiMysql, SiJava, SiPython, SiAmazonaws, SiDocker } from "react-icons/si";
 import Title from '../layouts/Title';
 import Card from './Card';
 
@@ -13,9 +13,23 @@ const Features = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
           title="Python"
-          des=" Skilled in utilizing Python libraries (NumPy, Pandas, etc.) 
+          des="Skilled in utilizing Python libraries (NumPy, Pandas, etc.) 
           for data analysis, manipulation, and machine learning model development."
           icon={<SiPython />}
+        />
+        <Card
+          title="Docker - Containerization"
+          des="Proficient in using Docker for containerizing 
+          applications, streamlining development workflows, and enhancing deployment consistency."
+          icon={<SiDocker />}
+        />
+        <Card
+          title="Amazon Web Services [S3, EC2, Elastic Beanstalk, ECR, ECS, CodePipelines]"
+          des="Skilled in leveraging AWS services for scalable cloud solutions. 
+          Experienced with S3 for object storage, EC2 for compute resources, 
+          Elastic Beanstalk for application deployment, ECR for container registry management, 
+          ECS for container orchestration, and CodePipeline for continuous integration and delivery."
+          icon={<SiAmazonaws />}
         />
         <Card
           title="Java"
