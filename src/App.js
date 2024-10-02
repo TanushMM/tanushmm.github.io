@@ -6,6 +6,7 @@ import DigitRecognizer from "./components/projects/DigitRecognizer";
 import PCA from "./components/projects/PCA";
 import HousePrice from "./components/projects/HousePrice"
 import TodoList from "./components/projects/TodoList"
+import RideShareApp from "./components/projects/RideShare";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/digitrecognizer" element={<DigitRecognizer />}></Route>
         <Route path="/pca" element={<PCA />}></Route>
         <Route path="/todolist" element={<TodoList />}></Route>
+        <Route path="/rideshare" element={<RideShareApp />}></Route>
       </Routes>
     </HashRouter>
   );

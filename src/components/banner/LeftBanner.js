@@ -5,7 +5,7 @@ import { SiJava, SiPython, SiLeetcode, SiDocker, SiAmazonaws } from "react-icons
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Data Science Enthusiast.", "Cloud and MLOps Enthusiast.", "Finance and Stock Market Enthusiast."],
+    words: ["Data Science Enthusiast.", "Cloud and DevOps Enthusiast.", "Finance and Stock Market Enthusiast."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -27,11 +27,13 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          Results-Driven and foreward looking Computer Science Student and a fresher
-          in the field of data science with tech skills: Python, Excel, Power BI, Statistics.
-          I love to read books and I have started solving DSA questions to enhance
-          my technical and problem solving skills.
+          A forward-thinking Computer Science student with a strong focus on backend development
+          (Flask, Express [Learning]), API design, and DevOps practices. Proficient in AWS,
+          Python for data science, and Java for algorithmic problem-solving (DSA). Continuously
+          refining my technical expertise through hands-on projects and DSA challenges. An avid
+          reader with interests in personal finance and technology.
         </p>
+
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>

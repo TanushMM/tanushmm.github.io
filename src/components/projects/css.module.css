@@ -137,3 +137,12 @@
 .homeButton:hover {
   background-color: #403B39; /* Slightly lighter on hover */
 }
+
+.imageContainer {
+  text-align: right; /* Center the image and caption */
+}
+
+.imageCaption {
+  margin-top: 8px; /* Space between the image and caption */
+  font-style: italic; /* Optional: Make the caption italic */
+}

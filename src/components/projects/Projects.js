@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree, projectFour, projectFive } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -15,20 +15,23 @@ const Projects = () => {
           des="My Projects"
         />
       </div>
-      {/* <div className="grid grid-cols-1 gap-6 xl:gap-14">
+
+      <div className="grid grid-cols-1 gap-6 xl:gap-14">
         <ProjectsCard
-          title="PREDICTIVE MODEL OF HOUSE PRICES AND DEPLOYMENT ON AWS [ELASTIC BEANSTALK, CODEPIPELINE]"
-          des="
-          Deployed a house price prediction model using a comprehensive 
-          data science pipeline and Flask application, fully integrated 
-          with AWS for scalability."
-          src={projectFour}
-          link="https://github.com/TanushMM/Predictive_Modelling_of_House_Prices_Using_Python_and_Flask"
-          link2={"/houseprice"}
+          title="RIDESHARE APPLICATION [AWS EC2, S3, FLASK, DOCKER]"
+          des="Developed a fully functional RideShare application with real-time 
+              ride matching, secure authentication, and dynamic route optimization. 
+              The application is containerized using Docker and deployed on AWS EC2, 
+              leveraging S3 for static asset storage."
+          src={projectSix}
+          link="https://github.com/TanushMM/application_share"
+          link2={"/rideshare"}
         />
       </div>
       <br></br>
-      <br></br> */}
+      <br></br>
+
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-14">
         <ProjectsCard
           title="PREDICTIVE MODEL OF HOUSE PRICES AND DEPLOYMENT ON AWS [ELASTIC BEANSTALK, CODEPIPELINE]"

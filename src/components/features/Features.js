@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiVisualstudiocode, SiGithub, SiLeetcode, SiMysql, SiJava, SiPython, SiAmazonaws, SiDocker } from "react-icons/si";
+import { SiVisualstudiocode, SiGithub, SiLeetcode, SiMysql, SiJava, SiPython, SiAmazonaws, SiDocker, SiMongodb } from "react-icons/si";
 import Title from '../layouts/Title';
 import Card from './Card';
 
@@ -32,16 +32,28 @@ const Features = () => {
           icon={<SiAmazonaws />}
         />
         <Card
+          title="MongoDB - NoSQL Database"
+          des="Harness the power of unstructured data with proficient querying and advanced NoSQL capabilities."
+          icon={<SiMongodb />}
+        />
+        <Card
+          title="SQL Databases - MySQL, PostgreSQL"
+          des="Leverage structured data management with expert SQL querying for relational database systems."
+          icon={<SiMysql />}
+        />
+        <Card
+          title="GitHub - Version Control"
+          des="Utilize Git for version control and collaboration. 
+            Manage projects effectively on GitHub."
+          link="https://github.com/TanushMM"
+          icon={<SiGithub />}
+        />
+        <Card
           title="Java"
           des="Implement efficient algorithms and 
           data structures (arrays, linked lists, Binary Tree, etc.) in Java."
           link="https://github.com/TanushMM/java_learning"
           icon={<SiJava />}
-        />
-        <Card
-          title="Structured Query Language - MySQL, PostgreSQL"
-          des="Unlock data insights through adept querying for various database systems."
-          icon={<SiMysql />}
         />
         <Card
           title="Data Structures and Algorithms"
@@ -54,13 +66,6 @@ const Features = () => {
           des="Leverage VS Code's features for efficient 
           code editing, debugging, and workflow optimization."
           icon={<SiVisualstudiocode />}
-        />
-        <Card
-          title="GitHub - Version Control"
-          des="Utilize Git for version control and collaboration. 
-          Manage projects effectively on GitHub."
-          link="https://github.com/TanushMM"
-          icon={<SiGithub />}
         />
       </div>
     </section>
