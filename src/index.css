@@ -27,3 +27,21 @@
 .scrollbar-hide::-webkit-scrollbar{
     display: none;
 }
+
+/* For hiding scrollbars in mobile menu */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Optional: custom styling for .bannerIcon */
+.bannerIcon {
+  @apply w-10 h-10 bg-black bg-opacity-40 backdrop-blur-md text-gray-300 inline-flex items-center justify-center rounded-full cursor-pointer hover:text-white hover:bg-opacity-70 transition duration-300;
+}
+
+.resumeLi {
+  @apply cursor-pointer text-center transition duration-300 ease-in-out;
+}

@@ -1,16 +1,14 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
-import Title from '../layouts/Title'
-import { testimonialOne,testimonialTwo, quote } from "../../assets";
+import Title from "../layouts/Title";
+import { testimonialOne, quote } from "../../assets";
 
-
-function SampleNextArrow(props) {
-  const { onClick } = props;
+function SampleNextArrow({ onClick }) {
   return (
     <div
-      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-0 right-0 shadow-shadowOne cursor-pointer z-10"
+      className="w-10 h-10 bg-[#1e1e1e] hover:bg-designColor transition duration-300 rounded-full flex justify-center items-center absolute top-1/2 -right-5 transform -translate-y-1/2 z-10 cursor-pointer text-white shadow-lg"
       onClick={onClick}
     >
       <HiArrowRight />
@@ -18,11 +16,10 @@ function SampleNextArrow(props) {
   );
 }
 
-function SamplePrevArrow(props) {
-  const { onClick } = props;
+function SamplePrevArrow({ onClick }) {
   return (
     <div
-      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-0 right-20 shadow-shadowOne cursor-pointer z-10"
+      className="w-10 h-10 bg-[#1e1e1e] hover:bg-designColor transition duration-300 rounded-full flex justify-center items-center absolute top-1/2 -left-5 transform -translate-y-1/2 z-10 cursor-pointer text-white shadow-lg"
       onClick={onClick}
     >
       <HiArrowLeft />
@@ -31,234 +28,94 @@ function SamplePrevArrow(props) {
 }
 
 const Testimonial = () => {
-      const [dotActive, setDocActive] = useState(0);
-     const settings = {
-       dots: true,
-       infinite: true,
-       speed: 500,
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       nextArrow:<SampleNextArrow />,
-       prevArrow:<SamplePrevArrow />,
-       beforeChange: (prev, next) => {
-         setDocActive(next);
-       },
-       appendDots: (dots) => (
-         <div
-           style={{
-             borderRadius: "10px",
-             padding: "10px",
-           }}
-         >
-           <ul
-             style={{
-               display: "flex",
-               gap: "15px",
-               justifyContent: "center",
-               marginTop: "20px",
-             }}
-           >
-             {" "}
-             {dots}{" "}
-           </ul>
-         </div>
-       ),
-       customPaging: (i) => (
-         <div
-           style={
-             i === dotActive
-               ? {
-                   width: "12px",
-                   height: "12px",
-                   color: "blue",
-                   background: "#ff014f",
-                   borderRadius: "50%",
-                   cursor: "pointer",
-                 }
-               : {
-                   width: "12px",
-                   height: "12px",
-                   color: "blue",
-                   background: "gray",
-                   borderRadius: "50%",
-                   cursor: "pointer",
-                 }
-           }
-         ></div>
-       ),
-     };
-  return (
-    <section
-      id="testimonial"
-      className="w-full py-20 border-b-[1px] border-b-black"
-    >
-      <div className="flex justify-center items-center text-center">
-        <Title title="WHAT PEOPLE SAY" des="Testimonial" />
+  const [dotActive, setDotActive] = useState(0);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    beforeChange: (_, next) => setDotActive(next),
+    appendDots: (dots) => (
+      <div className="pt-6">
+        <ul className="flex justify-center gap-3">{dots}</ul>
       </div>
-      <div className="max-w-6xl mx-auto">
-        {/* ================ Slider One ================== */}
+    ),
+    customPaging: (i) => (
+      <div
+        className={`w-3 h-3 rounded-full ${i === dotActive ? "bg-designColor" : "bg-gray-500"} cursor-pointer`}
+      />
+    ),
+  };
+
+  return (
+    <section id="testimonial" className="w-full py-20 border-b border-b-black">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="mb-10"> {/** text-left */}
+          <Title title="WHAT PEOPLE SAY" des="Testimonial" />
+        </div>
+
         <Slider {...settings}>
           <div className="w-full">
-            <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
-              <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
+            <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#1e2024] to-[#2b2f33] p-6 md:p-10 rounded-xl shadow-lg flex flex-col lg:flex-row gap-8 items-center lg:items-start"> {/** max-w-screen-lg */}
+              {/* Left Column: Image & Info */}
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:w-[30%] gap-4">
                 <img
-                  className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
                   src={testimonialOne}
-                  alt="testimonialOne"
+                  alt="testimonial"
+                  className="w-32 h-32 lg:w-36 lg:h-36 object-cover rounded-full border-4 border-designColor shadow-md"
                 />
-                <div className="w-full flex flex-col justify-end">
-                  <p className="text-sm uppercase text-designColor tracking-wide mb-2">
-                    Chennai | India
-                  </p>
-                  <h3 className="text-2xl font-bold">Gouri Shankar Prusty P</h3>
-                  <p className="text-base tracking-wide text-stone-200">
-                    Tanush's friend
-                  </p>
+                <div>
+                  <p className="text-sm uppercase text-designColor">Chennai, India</p>
+                  <h3 className="text-xl font-semibold text-white mt-2">
+                    Gouri Shankar Prusty P
+                  </h3>
+                  <p className="text-sm text-gray-400">Friend of Tanush</p>
                 </div>
               </div>
-              <div className="w-full lgl:w-[60%] h-full flex flex-col justify-between">
-                <img className="w-20 lgl:w-32" src={quote} alt="quote" />
-                <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
-                  <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-gray-900">
-                    <div>
-                      <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                        Critical thinker, great humour, good friend
-                      </h3>
-                      <p className="text-base text-stone-300 mt-3">
-                        Date: 21st March 2024
-                      </p>
-                    </div>
-                    <div className="text-yellow-500 flex gap-1">
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                    </div>
-                  </div>
-                  <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
-                  Tanush isn't just a colleague I respect, he is a fantastic friend I've known for 
-                  more than 2 years. His passion for Data Science and Finance is truly contagious, 
-                  and it constantly pushes me to learn and grow alongside them. But beyond his technical skills, 
-                  Tanush is an absolute blast to be around. He always has a positive attitude 
-                  and a great sense of humor, which makes even the most challenging tasks enjoyable. 
-                  He is also incredibly supportive and always there to lend a helping hand, 
-                  whether it's work-related or personal.
-                  Tanush is a brilliant problem-solver. When i hit a roadblock on any project, 
-                  his creative use of tools got me back on track.
-                  </p>
-                  <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">Link to my LinkedIn: </p>
-                  <a className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6" href="https://www.linkedin.com/in/gouri-shankar-prusty/" target="_blank">https://www.linkedin.com/in/gouri-shankar-prusty/</a>
+
+              {/* Right Column: Content */}
+              <div className="lg:w-[70%] flex flex-col justify-start">
+                <img src={quote} alt="quote" className="w-8 h-8 opacity-60 mb-2" />
+
+                <div className="border-l-4 border-designColor pl-4 py-2">
+                  <h4 className="text-lg lg:text-xl font-semibold text-white">
+                    Critical thinker, great humour, good friend
+                  </h4>
+                  <p className="text-sm text-gray-400">21st March 2024</p>
                 </div>
+
+                <div className="text-yellow-400 flex mt-2">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <RiStarFill key={i} />
+                  ))}
+                </div>
+
+                <p className="text-gray-300 text-sm lg:text-base mt-4 leading-relaxed tracking-wide">
+                  Tanush isn't just a colleague I respect—he's one of my closest friends from college, and we've known each other for over 4 years now. From day one, I saw a spark in his curiosity, especially around Finance and Data Science, and that passion has only grown stronger with time. His commitment to continuous learning—whether it's mastering advanced machine learning models or diving deep into financial analytics—is inspiring...
+                </p>
+
+                <p className="text-gray-400 mt-4 font-medium">
+                  LinkedIn:{" "}
+                  <a
+                    href="https://www.linkedin.com/in/gouri-shankar-prusty/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-designColor hover:underline"
+                  >
+                    gouri-shankar-prusty
+                  </a>
+                </p>
               </div>
             </div>
           </div>
-          {/* ================ Slider Two ================== */}
-
-          {/* <div className="w-full">
-            <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
-              <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <img
-                  className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialTwo}
-                  alt="testimonialTwo"
-                />
-                <div className="w-full flex flex-col justify-end">
-                  <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                    Bound - Trolola
-                  </p>
-                  <h3 className="text-2xl font-bold">Jone Duone Joe</h3>
-                  <p className="text-base tracking-wide text-gray-500">
-                    Operation Officer
-                  </p>
-                </div>
-              </div>
-              <div className="w-full lgl:w-[60%] h-full flex flex-col justify-between">
-                <img className="w-20 lgl:w-32" src={quote} alt="quote" />
-                <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
-                  <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-gray-900">
-                    <div>
-                      <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                        Travel Mobile App Design.
-                      </h3>
-                      <p className="text-base text-gray-400 mt-3">
-                        via Upwork - Mar 4, 2015 - Aug 30, 2021 test
-                      </p>
-                    </div>
-                    <div className="text-yellow-500 flex gap-1">
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                    </div>
-                  </div>
-                  <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                    dolorum, eos natus ipsum numquam veniam officia
-                    necessitatibus ratione quos debitis exercitationem
-                    repudiandae facilis id neque nihil accusantium perspiciatis
-                    repellat? Iste.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* ================ Slider Three ================== */}
-
-          {/* <div className="w-full">
-            <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
-              <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <img
-                  className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialOne}
-                  alt="testimonialOne"
-                />
-                <div className="w-full flex flex-col justify-end">
-                  <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                    Bound - Trolola
-                  </p>
-                  <h3 className="text-2xl font-bold">Jone Duone Joe</h3>
-                  <p className="text-base tracking-wide text-gray-500">
-                    Operation Officer
-                  </p>
-                </div>
-              </div>
-              <div className="w-full lgl:w-[60%] h-full flex flex-col justify-between">
-                <img className="w-20 lgl:w-32" src={quote} alt="quote" />
-                <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
-                  <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-gray-900">
-                    <div>
-                      <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                        Travel Mobile App Design.
-                      </h3>
-                      <p className="text-base text-gray-400 mt-3">
-                        via Upwork - Mar 4, 2015 - Aug 30, 2021 test
-                      </p>
-                    </div>
-                    <div className="text-yellow-500 flex gap-1">
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                      <RiStarFill />
-                    </div>
-                  </div>
-                  <p className="text-base font-titleFont text-gray-400 font-medium tracking-wide leading-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                    dolorum, eos natus ipsum numquam veniam officia
-                    necessitatibus ratione quos debitis exercitationem
-                    repudiandae facilis id neque nihil accusantium perspiciatis
-                    repellat? Iste.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </Slider>
       </div>
     </section>
   );
-}
+};
 
-export default Testimonial
+export default Testimonial;

@@ -1,11 +1,10 @@
-import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaLinkedinIn, FaMicrosoft, FaMediumM } from "react-icons/fa";
 import { SiJava, SiPython, SiLeetcode, SiDocker, SiAmazonaws } from "react-icons/si";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Data Science Enthusiast.", "Cloud and DevOps Enthusiast.", "Finance and Stock Market Enthusiast."],
+    words: ["Backend Engineer.", "Agentic AI Architect.", "Finance Enthusiast."],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -14,9 +13,8 @@ const LeftBanner = () => {
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        {/* <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4> */}
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">Tanush Modem Mahesh</span>
+          Hi, I'm <span className="text-designColor capitalize">Tanush</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
@@ -27,11 +25,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          A forward-thinking Computer Science student with a strong focus on backend development
-          (Flask, Express [Learning]), API design, and DevOps practices. Proficient in AWS,
-          Python for data science, and Java for algorithmic problem-solving (DSA). Continuously
-          refining my technical expertise through hands-on projects and DSA challenges. An avid
-          reader with interests in personal finance and technology.
+          I'm a backend-focused software engineer passionate about scalable systems, distributed architectures, and cloud infrastructure. I enjoy building resilient, well-structured services that support long-term maintainability and performance.
+        </p>
+        <p className="text-base font-bodyFont leading-6 tracking-wide">
+          Outside of tech, I explore quantitative trading systems, algorithmic strategies, and personal finance automation. I also enjoy traveling and discovering new places—experiencing different cultures and environments inspires me.
         </p>
 
       </div>
@@ -53,9 +50,6 @@ const LeftBanner = () => {
             <span className="bannerIcon">
               <a href="https://leetcode.com/u/TanushMM/" target="_blank"><SiLeetcode /></a>
             </span>
-            {/* <span className="bannerIcon">
-              <a href="https://twitter.com/tanushmm2004" target="_blank"><FaTwitter /></a>
-            </span> */}
           </div>
         </div>
         <div>
