@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2fbc1712.css",
+    "main.js": "/static/js/main.44fca5f7.js",
+    "static/media/projectOne.png": "/static/media/projectOne.adb01e8b17d7b80d574e.png",
+    "static/media/testimonialOne.png": "/static/media/testimonialOne.a0a91817dfcdebaf4fa4.png",
+    "static/media/bannerImg.png": "/static/media/bannerImg.6db4fc4f7f15bb3a2542.png",
+    "static/media/MNIST_Dataset.png": "/static/media/MNIST_Dataset.cddc2964726a667f0ae3.png",
+    "static/media/projectThree.jpg": "/static/media/projectThree.e58709b653701c319743.jpg",
+    "static/media/InnovateX_Rideshare_High_Level_Syetem_Design.png": "/static/media/InnovateX_Rideshare_High_Level_Syetem_Design.fdb56350aab8156c7378.png",
+    "static/media/projectSix.png": "/static/media/projectSix.4b177fdd0c3f063dbf00.png",
+    "static/media/InnovateX_User_Flow.png": "/static/media/InnovateX_User_Flow.416ca0f7bb0e41dafb12.png",
+    "static/media/projectFour.jpg": "/static/media/projectFour.b73b359237d6f9922908.jpg",
+    "static/media/projectFive.jpeg": "/static/media/projectFive.22bd8f9e1208339345a4.jpeg",
+    "static/media/contactImg.jpg": "/static/media/contactImg.a23dd81ac5fe3e9b7022.jpg",
+    "static/media/InnovateX_Admin_Flow.png": "/static/media/InnovateX_Admin_Flow.9148ed6e9be93ca558ab.png",
+    "static/media/linearRegression.png": "/static/media/linearRegression.c9c0ee85decdaa7b6a7a.png",
+    "static/media/testimonialTwo.png": "/static/media/testimonialTwo.c6df2773c486964035d9.png",
+    "static/media/projectTwo.png": "/static/media/projectTwo.95fe4386600977485f34.png",
+    "static/media/oldman_dog.gif": "/static/media/oldman_dog.d6cd93d5476b68402b65.gif",
+    "index.html": "/index.html",
+    "main.2fbc1712.css.map": "/static/css/main.2fbc1712.css.map",
+    "main.44fca5f7.js.map": "/static/js/main.44fca5f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fbc1712.css",
+    "static/js/main.44fca5f7.js"
+  ]
+}
