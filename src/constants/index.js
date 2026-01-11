@@ -36,7 +36,7 @@ export const navLinksdata = [
   },
 ];
 
-export const resumeLink = "https://drive.google.com/file/d/1Kou4e0JrPj6WSd2WEIs5qOjBgDy9HQpC/view?usp=sharing"
+export const resumeLink = "https://drive.google.com/file/d/1cMkjtFRU_90VhStNV7YNMaPJDz_oo_1x/view?usp=sharing"
 
 
 export const myProjects = [
