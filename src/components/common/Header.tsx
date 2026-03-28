@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties } from "react"
+import { useEffect, useRef, useState, type CSSProperties } from "react"
 import { Moon, Sun } from "lucide-react"
 
 interface HeaderProps {
@@ -16,6 +16,8 @@ const navItems = [
 
 export default function Header({ theme, onThemeChange }: HeaderProps) {
   const [activeSection, setActiveSection] = useState(navItems[0].href)
+  const [navThumbPulse, setNavThumbPulse] = useState<"" | "to-left" | "to-right">("")
+  const previousNavIndex = useRef(0)
 
   useEffect(() => {
     const sectionIds = navItems.map((item) => item.href.replace("#", ""))
@@ -54,6 +56,22 @@ export default function Header({ theme, onThemeChange }: HeaderProps) {
     navItems.findIndex((item) => item.href === activeSection),
   )
 
+  useEffect(() => {
+    const previous = previousNavIndex.current
+    if (previous === activeIndex) {
+      return
+    }
+
+    setNavThumbPulse(activeIndex > previous ? "to-right" : "to-left")
+    previousNavIndex.current = activeIndex
+
+    const pulseTimeout = window.setTimeout(() => {
+      setNavThumbPulse("")
+    }, 460)
+
+    return () => window.clearTimeout(pulseTimeout)
+  }, [activeIndex])
+
   return (
     <header className="site-header">
       <div className="site-header-backdrop" />
@@ -75,7 +93,10 @@ export default function Header({ theme, onThemeChange }: HeaderProps) {
                 } as CSSProperties
               }
             >
-              <span className="nav-thumb" aria-hidden="true" />
+              <span
+                className={`nav-thumb ${navThumbPulse ? `is-${navThumbPulse}` : ""}`}
+                aria-hidden="true"
+              />
               {navItems.map((item) => (
                 <a
                   key={item.href}
