@@ -98,6 +98,7 @@ export default function Header({ theme, onThemeChange }: HeaderProps) {
                   type="radio"
                   name="theme"
                   value="light"
+                  data-option="1"
                   checked={theme === "light"}
                   onChange={() => onThemeChange("light")}
                 />
@@ -112,6 +113,7 @@ export default function Header({ theme, onThemeChange }: HeaderProps) {
                   type="radio"
                   name="theme"
                   value="dark"
+                  data-option="2"
                   checked={theme === "dark"}
                   onChange={() => onThemeChange("dark")}
                 />
