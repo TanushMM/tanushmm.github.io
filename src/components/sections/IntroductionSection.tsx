@@ -2,7 +2,6 @@ import { motion } from "framer-motion"
 import { Sparkles } from "lucide-react"
 import { useEffect, useState } from "react"
 import PipelineDeploymentPanel from "../hero/PipelineDeploymentPanel"
-import TradingSimulationPanel from "../hero/TradingSimulationPanel"
 import type { IntroData } from "../../types/portfolio"
 import GlassPanel from "../ui/GlassPanel"
 
@@ -27,6 +26,7 @@ export default function IntroductionSection({
     <section id="introduction" className="hero-section">
       <div className="hero-grid">
         <motion.div
+          className="hero-left"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75 }}
@@ -40,7 +40,10 @@ export default function IntroductionSection({
               Hello, I&apos;m <span>{intro.name}</span>
             </h1>
             <p className="hero-lead">
-              a <span className="hero-inline-role">{intro.rotatingRoles[roleIndex]}</span>
+              a{" "}
+              <span className="hero-inline-role">
+                {intro.rotatingRoles[roleIndex]}
+              </span>
             </p>
             <p className="hero-body">{intro.summary}</p>
             <p className="hero-body">{intro.description}</p>
@@ -77,14 +80,13 @@ export default function IntroductionSection({
         </motion.div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         className="hero-secondary"
         initial={{ opacity: 0, y: 36 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.95, delay: 0.18 }}
       >
-        <TradingSimulationPanel />
-      </motion.div>
+      </motion.div> */}
     </section>
   )
 }

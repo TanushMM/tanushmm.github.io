@@ -449,7 +449,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
   gap: 24px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .glass-panel {
@@ -488,6 +488,7 @@ button {
 
 .hero-copy {
   padding: clamp(30px, 5vw, 52px);
+  height: 100%;
 }
 
 .eyebrow,
@@ -619,6 +620,11 @@ button {
   display: grid;
   gap: 18px;
   align-self: stretch;
+  height: 100%;
+}
+
+.hero-left {
+  height: 100%;
 }
 
 .hero-sim-panel {
@@ -647,6 +653,9 @@ button {
 
 .pipeline-panel {
   min-height: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
 }
 
 .pipeline-stage-row {
@@ -1347,36 +1356,29 @@ button {
 }
 
 .skills-list {
-  display: grid;
-  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 18px;
 }
 
 .skill-row {
-  display: grid;
-  gap: 8px;
+  display: inline-flex;
 }
 
-.skill-copy {
-  display: flex;
+.skill-pill {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  color: var(--text-soft);
-}
-
-.skill-track {
-  width: 100%;
-  height: 8px;
+  min-height: 34px;
+  padding: 0 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-}
-
-.skill-fill {
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--accent-soft), var(--accent-strong));
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 52%),
+    rgba(255, 255, 255, 0.04);
+  font-size: 0.82rem;
+  line-height: 1;
 }
 
 .media-grid,
@@ -1738,6 +1740,10 @@ button {
   border-radius: 20px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.04);
+}
+
+.modal-highlight-block {
+  margin-top: 6px;
 }
 
 .modal-block h4 {

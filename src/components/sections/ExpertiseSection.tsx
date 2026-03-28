@@ -22,16 +22,7 @@ export default function ExpertiseSection({ items }: ExpertiseSectionProps) {
             <div className="skills-list">
               {item.skills.map((skill) => (
                 <div key={skill.name} className="skill-row">
-                  <div className="skill-copy">
-                    <span>{skill.name}</span>
-                    <strong>{skill.level}%</strong>
-                  </div>
-                  <div className="skill-track">
-                    <div
-                      className="skill-fill"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
+                  <span className="skill-pill">{skill.name}</span>
                 </div>
               ))}
             </div>

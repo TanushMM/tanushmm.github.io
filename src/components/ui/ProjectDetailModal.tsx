@@ -33,6 +33,17 @@ export default function ProjectDetailModal({
           ))}
         </div>
 
+        {project.highlights.length > 0 ? (
+          <div className="modal-block modal-highlight-block">
+            <h4>Key Contributions</h4>
+            <ul className="highlight-list compact-list">
+              {project.highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
         <div className="modal-grid">
           {project.details.map((detail) => (
             <div key={detail.title} className="modal-block">
