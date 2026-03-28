@@ -13,14 +13,40 @@ export default function IntroductionSection({
   intro,
 }: IntroductionSectionProps) {
   const [roleIndex, setRoleIndex] = useState(0)
+  const [typedRole, setTypedRole] = useState("")
+  const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {
-    const timer = window.setInterval(() => {
-      setRoleIndex((current) => (current + 1) % intro.rotatingRoles.length)
-    }, 2200)
+    const currentRole = intro.rotatingRoles[roleIndex]
+    let nextDelay = isDeleting ? 54 : 84
 
-    return () => window.clearInterval(timer)
-  }, [intro.rotatingRoles.length])
+    if (!isDeleting && typedRole === currentRole) {
+      nextDelay = 1250
+      const timer = window.setTimeout(() => {
+        setIsDeleting(true)
+      }, nextDelay)
+      return () => window.clearTimeout(timer)
+    }
+
+    if (isDeleting && typedRole === "") {
+      nextDelay = 320
+      const timer = window.setTimeout(() => {
+        setIsDeleting(false)
+        setRoleIndex((current) => (current + 1) % intro.rotatingRoles.length)
+      }, nextDelay)
+      return () => window.clearTimeout(timer)
+    }
+
+    const timer = window.setTimeout(() => {
+      setTypedRole((current) =>
+        isDeleting
+          ? current.slice(0, -1)
+          : currentRole.slice(0, current.length + 1),
+      )
+    }, nextDelay)
+
+    return () => window.clearTimeout(timer)
+  }, [intro.rotatingRoles, roleIndex, typedRole, isDeleting])
 
   return (
     <section id="introduction" className="hero-section">
@@ -42,7 +68,8 @@ export default function IntroductionSection({
             <p className="hero-lead">
               a{" "}
               <span className="hero-inline-role">
-                {intro.rotatingRoles[roleIndex]}
+                {typedRole}
+                <span className="typing-caret" aria-hidden="true" />
               </span>
             </p>
             <p className="hero-body">{intro.summary}</p>

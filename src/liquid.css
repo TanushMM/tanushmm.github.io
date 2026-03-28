@@ -540,7 +540,19 @@ button {
 }
 
 .hero-inline-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 16ch;
   color: var(--accent-strong);
+}
+
+.typing-caret {
+  width: 0.08em;
+  height: 1.02em;
+  border-radius: 2px;
+  background: currentColor;
+  animation: blinkCursor 1s steps(1) infinite;
 }
 
 .cta-row {
