@@ -2,15 +2,14 @@
   "introduction": {
     "name": "Tanush",
     "fullName": "Tanush Modem Mahesh",
-    "headline": "Software Engineer",
+    "headline": "Backend Engineer",
     "rotatingRoles": [
-      "Software Engineer",
       "Backend Engineer",
-      "AI Systems Builder",
-      "Quantitative Trading Enthusiast"
+      "Finance Enthusiast",
+      "Agentic AI Architect"
     ],
     "summary": "I'm a backend-focused software engineer passionate about scalable systems, distributed architectures, and cloud infrastructure. I enjoy building resilient, well-structured services that support long-term maintainability and performance.",
-    "description": "Outside of engineering, I explore quantitative trading systems, statistical arbitrage, and personal finance automation. I enjoy combining strong software foundations with curiosity-driven experimentation across AI, backend systems, and markets."
+    "description": "Outside of tech, I explore quantitative trading systems, algorithmic strategies, and personal finance automation. I also enjoy traveling and discovering new places. Experiencing different cultures and environments inspires me."
   },
   "socials": {
     "linkedin": "https://www.linkedin.com/in/tanush-mm/",
@@ -23,105 +22,107 @@
     {
       "id": "sei-cei",
       "title": "Software Engineer",
-      "company": "CEI India Private Limited - Subsidiary of CEI America",
-      "date": "May 2025 - Present",
-      "summary": "Building internal AI systems and QA automation platforms with ownership across architecture, deployments, testing workflows, and organization-scale rollout.",
+      "company": "CEI India Private Limited · subsidiary of CEI America",
+      "date": "May 2025 - Current",
+      "summary": "Leading backend and AI-platform work across QA automation, infrastructure, and internal tooling.",
       "highlights": [
-        "Building an AI code generation tool that analyzes requirements, writes specifications, generates code, and runs unit tests to validate functionality.",
-        "Integrated an internal AI testing tool that verifies generated code through automated UI actions and end-to-end flows on lightweight local deployments.",
-        "Scaled the QA automation platform for organization-wide adoption, generating 250+ test cases from screenshots in 45 minutes and reducing manual effort by 70%.",
-        "Built a multi-agent architecture with configurable output depth across Quick, Think, and Deep Think modes based on project needs.",
-        "Configured on-prem LLM servers with Nginx and load balancing for secure, subscription-free AI access, and managed SDLC through Azure DevOps with Docker-based deployments, code reviews, and sprint planning."
+        "Led the end-to-end development of an AI-powered QA automation tool that improved manual QA efficiency by 70% and auto-generated 250+ test cases in under 45 minutes from screenshots and supporting documents.",
+        "Managed complete SDLC using Azure DevOps, resolved tickets independently, and handled sprint execution and code reviews.",
+        "Implemented Docker-based deployments with Nginx on production servers and automated build and deployment processes.",
+        "Set up an on-prem LLM server with load balancing, enabling secure, subscription-free access to LLMs across the organization.",
+        "Built a modular multi-agent architecture for scalable test generation with configurable output depth."
       ],
       "technologies": [
         "Python",
-        "Azure DevOps",
         "Docker",
         "Nginx",
+        "Azure DevOps",
         "LLMs",
         "Multi-Agent Systems"
       ]
     },
     {
-      "id": "intern-cei",
+      "id": "se-intern-cei",
       "title": "Software Engineer Intern",
-      "company": "CEI India Private Limited - Subsidiary of CEI America",
+      "company": "CEI India Private Limited · subsidiary of CEI America",
       "date": "Jan 2025 - Apr 2025",
-      "summary": "Built the first internal QA tool prototype and agent-based workflow foundation that later expanded into a larger organization-facing platform.",
+      "summary": "Built a strong foundation in AI agents, QA workflows, automation, and enterprise engineering practices.",
       "highlights": [
-        "Built the first version of the QA automation tool and multi-agent system, proving the concept and helping secure project funding.",
-        "Developed automation scripts using PowerShell and Microsoft Power Platform to accelerate internal reporting and repetitive workflows.",
-        "Worked with Agile methodologies and CI/CD practices in day-to-day delivery, resulting in an immediate full-time offer."
+        "Ramped up on AI agents, agentic system architecture, and multi-agent AI systems.",
+        "Applied SDLC, STLC, and Agile methodologies for effective collaboration and timely delivery.",
+        "Gained experience with source control, Azure DevOps, Microsoft Power Platform, RPA, and PowerShell automation.",
+        "Explored QA and testing practices including unit, automation, and performance testing techniques."
       ],
       "technologies": [
-        "PowerShell",
-        "Microsoft Power Platform",
         "Azure DevOps",
-        "CI/CD",
-        "Agile"
+        "Power Platform",
+        "PowerShell",
+        "RPA",
+        "Testing"
       ]
     },
     {
-      "id": "intervie-tech",
+      "id": "da-intervie",
       "title": "Data Analyst Intern",
       "company": "Intervie Tech Private Limited",
       "date": "Jun 2024 - Jul 2024",
-      "summary": "Delivered a predictive HR analytics project under a tight deadline using Python-based analysis, visualization, and team coordination.",
+      "summary": "Worked on data analysis and team-led delivery for an HR-focused data science project.",
       "highlights": [
-        "Worked in a team to deliver a predictive HR analytics project using Python, Pandas, and Scikit-Learn within a strict two-month timeline.",
-        "Created data visualizations to identify attrition factors and helped manage delivery timelines to ensure successful completion."
+        "Led a team to complete a data science project addressing modern human resource challenges.",
+        "Applied Python, Pandas, and Scikit-Learn for analysis and visualization.",
+        "Managed tasks and timelines while strengthening hands-on collaboration and delivery discipline."
       ],
       "technologies": [
         "Python",
         "Pandas",
         "Scikit-Learn",
-        "Data Visualization"
+        "Visualization"
       ]
     }
   ],
   "expertise": [
     {
-      "id": "languages-frameworks",
-      "category": "Languages & Frameworks",
-      "description": "Backend and application development across Java, Spring Boot, Node.js, and Python-based systems.",
+      "id": "backend",
+      "category": "Backend Systems",
+      "description": "Scalable services, APIs, async workflows, and maintainable application architecture.",
       "skills": [
-        { "name": "Java", "level": 84 },
-        { "name": "Spring Boot", "level": 80 },
-        { "name": "Node.js", "level": 76 },
-        { "name": "Python", "level": 92 }
+        { "name": "Python", "level": 92 },
+        { "name": "Flask", "level": 90 },
+        { "name": "REST APIs", "level": 91 },
+        { "name": "Distributed Systems", "level": 84 }
       ]
     },
     {
-      "id": "cloud-databases",
-      "category": "Cloud & Databases",
-      "description": "Deployment-ready infrastructure work across AWS, Docker, Nginx, and production-oriented data storage.",
+      "id": "cloud",
+      "category": "Cloud & DevOps",
+      "description": "Deployment, containerization, runtime stability, and infrastructure-aware delivery.",
       "skills": [
-        { "name": "AWS (S3 / EC2)", "level": 84 },
-        { "name": "Docker", "level": 90 },
-        { "name": "PostgreSQL", "level": 78 },
-        { "name": "MongoDB", "level": 80 }
+        { "name": "Docker", "level": 92 },
+        { "name": "AWS EC2 / S3", "level": 86 },
+        { "name": "Nginx", "level": 84 },
+        { "name": "Azure DevOps", "level": 83 }
       ]
     },
     {
-      "id": "devops-concepts",
-      "category": "DevOps & Concepts",
-      "description": "Systems thinking around APIs, microservices, delivery pipelines, architecture, and end-to-end software execution.",
+      "id": "ai",
+      "category": "AI Tooling",
+      "description": "Agentic systems, prompt-driven workflows, internal AI platforms, and applied automation.",
       "skills": [
-        { "name": "RESTful APIs", "level": 88 },
-        { "name": "Microservices", "level": 84 },
-        { "name": "CI/CD Pipelines", "level": 86 },
-        { "name": "SDLC / Agile", "level": 87 }
+        { "name": "Agentic AI Systems", "level": 88 },
+        { "name": "LLM Tooling", "level": 86 },
+        { "name": "QA Automation", "level": 87 },
+        { "name": "PowerShell / RPA", "level": 78 }
       ]
     },
     {
-      "id": "tools-ai",
-      "category": "Tools & AI",
-      "description": "Practical engineering with Git workflows, agent systems, testing tools, and developer-first automation.",
+      "id": "data",
+      "category": "Data & Quant",
+      "description": "Analysis, predictive modeling, statistical thinking, and trading-system curiosity.",
       "skills": [
-        { "name": "Git / GitHub", "level": 88 },
-        { "name": "Google Agent Development Kit", "level": 74 },
-        { "name": "Postman", "level": 82 },
-        { "name": "Linux / Terminal", "level": 84 }
+        { "name": "Pandas / Scikit-Learn", "level": 85 },
+        { "name": "Statistics", "level": 82 },
+        { "name": "Linear Regression", "level": 84 },
+        { "name": "Quant / Personal Finance", "level": 80 }
       ]
     }
   ],
@@ -130,69 +131,204 @@
       "id": "rideshare",
       "slug": "rideshare",
       "title": "RideShare Application",
-      "eyebrow": "Backend Microservices",
-      "description": "A ride-sharing backend built with microservices, API Gateway orchestration, JWT-based security, Dockerized deployment, and AWS hosting.",
-      "summary": "Led backend development in Python using Flask to build ride matching, user management, and payments services. Designed the system around scalable microservices, centralized request flow through an API Gateway, and a container-first AWS deployment model.",
+      "eyebrow": "Featured Build",
+      "description": "A backend-led ride-sharing platform built around microservices, API orchestration, secure auth, Dockerized deployment, and AWS hosting.",
+      "summary": "Developed a fully functional RideShare application with real-time ride matching, secure authentication, and dynamic route optimization. The app is containerized with Docker and deployed on AWS EC2, leveraging S3 for static asset storage.",
       "technologies": [
         "Python",
         "Flask",
         "Docker",
         "AWS EC2",
         "AWS S3",
-        "JWT",
-        "Microservices"
+        "MongoDB",
+        "JWT"
       ],
       "links": {
         "github": "https://github.com/TanushMM/application_share"
       },
       "highlights": [
-        "Led backend development for ride matching, users, and payments",
-        "Architected microservices with API Gateway and JWT-based security",
-        "Containerized the system and deployed it on AWS EC2 with S3-backed assets"
+        "Microservices architecture with API Gateway coordination",
+        "Containerized deployment strategy with Docker",
+        "AWS-hosted backend plus S3-backed static delivery"
       ],
       "details": [
         {
           "title": "Architecture",
-          "content": "The platform was designed around modular backend services to keep business domains separated while preserving a clear request path through an API Gateway."
+          "content": "The system was designed around modular backend services for ride matching, notifications, payment flow, and authentication. An API Gateway streamlined client communication and kept request orchestration centralized."
         },
         {
-          "title": "Deployment",
-          "content": "Dockerized services made the system portable across environments, and AWS EC2 plus S3 provided a practical cloud deployment setup for the project lifecycle."
+          "title": "Platform Thinking",
+          "content": "The backend emphasized secure authentication, scalable deployment, and a reliable path from local development to hosted cloud infrastructure using Docker and AWS."
         },
         {
           "title": "Leadership",
-          "content": "Tanush led backend ownership, set project milestones, coordinated delivery, and ensured the team stayed aligned on timelines and scope."
+          "content": "Tanush led the system design and backend development while coordinating integration with frontend work to keep the end-to-end product cohesive."
         }
       ]
     },
     {
-      "id": "quant-trading",
-      "slug": "quant-trading",
-      "title": "Quantitative Trading System",
-      "eyebrow": "Statistical Arbitrage",
-      "description": "A Python-based pairs trading system built around statistical arbitrage, data analysis, signal generation, and repeatable research workflows.",
-      "summary": "Designed a robust pairs trading system using statistical arbitrage concepts, demonstrating strength in financial data analysis, statistical modeling, and systematic signal generation. The project achieved a 75% success rate in predicting the probability of profitability.",
+      "id": "house-price",
+      "slug": "house-price",
+      "title": "Predictive Model of House Prices",
+      "eyebrow": "ML + Deployment",
+      "description": "A housing-price prediction workflow that combines data ingestion, preprocessing, model training, Flask delivery, and cloud deployment.",
+      "summary": "Deployed a house price prediction model using a comprehensive data science pipeline and Flask application, fully integrated with AWS for scalability.",
       "technologies": [
         "Python",
-        "Statistical Arbitrage",
-        "Pairs Trading",
-        "Data Analysis",
-        "Signal Generation"
+        "Flask",
+        "Scikit-Learn",
+        "AWS Elastic Beanstalk",
+        "CodePipeline"
       ],
-      "links": {},
+      "links": {
+        "github": "https://github.com/TanushMM/Predictive_Modelling_of_House_Prices_Using_Python_and_Flask",
+        "live": "http://tanushhousepriceprediction.ap-south-1.elasticbeanstalk.com/"
+      },
       "highlights": [
-        "Designed a research-driven pairs trading workflow in Python",
-        "Applied statistical modeling and financial data analysis to generate signals",
-        "Achieved a 75% success rate in predicting probability of profitability"
+        "Structured data science pipeline from ingestion to prediction",
+        "User-facing Flask app for real-time predictions",
+        "AWS deployment for accessibility and scale"
       ],
       "details": [
         {
-          "title": "Research Flow",
-          "content": "The system focused on identifying pairs, analyzing relationships, modeling mean-reversion behavior, and translating those observations into systematic trading signals."
+          "title": "Pipeline Design",
+          "content": "The project focused on clean preprocessing, feature preparation, training, evaluation, and exposing the model through a practical interface."
         },
         {
-          "title": "Core Strength",
-          "content": "This project reflects Tanush's interest in combining software engineering with quantitative reasoning, especially in data pipelines, model evaluation, and strategy iteration."
+          "title": "Deployment",
+          "content": "The predictive workflow was deployed with AWS services so the application remained accessible and easier to maintain beyond local experimentation."
+        }
+      ]
+    },
+    {
+      "id": "todo",
+      "slug": "todo",
+      "title": "Flask ToDo List",
+      "eyebrow": "Containerized App",
+      "description": "A simple but clean task management app used to explore Dockerized full-stack setup with Flask and MongoDB.",
+      "summary": "Designed and containerized a Flask-based to-do list app using Docker for simplified deployment and modular scaling.",
+      "technologies": [
+        "Flask",
+        "MongoDB",
+        "Docker",
+        "Docker Compose",
+        "HTML/CSS"
+      ],
+      "links": {
+        "github": "https://github.com/TanushMM/Dockerized_ToDoList_Python.git"
+      },
+      "highlights": [
+        "Persistent MongoDB-backed task storage",
+        "Multi-container setup with Docker Compose",
+        "Good example of maintainable container-first app structure"
+      ],
+      "details": [
+        {
+          "title": "Core Flow",
+          "content": "Users can add and remove tasks through a simple web UI while the Flask app handles server logic and MongoDB persists the data."
+        },
+        {
+          "title": "Containerization",
+          "content": "The application and database run as separate containers, making the environment portable and repeatable across systems."
+        }
+      ]
+    },
+    {
+      "id": "pairs-trading",
+      "slug": "pairs-trading",
+      "title": "Linear Regression Pairs Trading System",
+      "eyebrow": "Quant Exploration",
+      "description": "A data-driven trading exploration using APIs, regression, and streamlined data transformation for market analysis.",
+      "summary": "Built a system using linear regression and APIs to identify trading opportunities. Automated data extraction from JSON to CSV streamlined ML processing.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "Linear Regression",
+        "APIs",
+        "CSV Pipelines"
+      ],
+      "links": {
+        "github": "https://github.com/TanushMM/Linear_Regression_Pairs_Trading_System_Flask"
+      },
+      "highlights": [
+        "Market data acquisition through APIs",
+        "Regression-based pair analysis",
+        "Automation-friendly transformation pipeline"
+      ],
+      "details": [
+        {
+          "title": "Signal Discovery",
+          "content": "The project explores asset-pair selection, historical relationship analysis, and regression to identify potentially useful trading opportunities."
+        },
+        {
+          "title": "Workflow",
+          "content": "The pipeline focused on acquiring structured data, normalizing it for analysis, and producing a format that made experimentation easier."
+        }
+      ]
+    },
+    {
+      "id": "digit-recognizer",
+      "slug": "digit-recognizer",
+      "title": "Digit Recognizer Using CNN",
+      "eyebrow": "Deep Learning",
+      "description": "A handwritten-digit recognition project built on CNN fundamentals and the MNIST dataset for practical OCR-style classification.",
+      "summary": "Handwritten digit recognition using CNNs and the MNIST dataset, achieving high accuracy for practical OCR applications.",
+      "technologies": [
+        "Python",
+        "CNN",
+        "MNIST",
+        "Deep Learning",
+        "OCR"
+      ],
+      "links": {
+        "github": "https://github.com/TanushMM/Digit-Recognition-Using-Convolution-Neural-Network"
+      },
+      "highlights": [
+        "CNN-based image classification workflow",
+        "MNIST-backed training and evaluation",
+        "Practical OCR-oriented thinking"
+      ],
+      "details": [
+        {
+          "title": "Modeling",
+          "content": "The model used convolutional neural network layers to learn spatial features from handwritten digits and classify them reliably."
+        },
+        {
+          "title": "Use Case",
+          "content": "This project reflects applied interest in computer vision and OCR fundamentals, especially around robustness and input preprocessing."
+        }
+      ]
+    },
+    {
+      "id": "pca-analysis",
+      "slug": "pca-analysis",
+      "title": "Data Preprocessing and PCA",
+      "eyebrow": "Data Analysis",
+      "description": "A dimensionality-reduction and regression study built around preprocessing quality, exploratory analysis, and principal components.",
+      "summary": "Vehicle dataset analysis using PCA and linear regression to explore dimensionality reduction and model performance.",
+      "technologies": [
+        "Python",
+        "PCA",
+        "Linear Regression",
+        "EDA",
+        "Statistics"
+      ],
+      "links": {
+        "github": "https://github.com/TanushMM/Data-Preprocessing-And-Dimensionality-Reduction-Using-PCA"
+      },
+      "highlights": [
+        "Preprocessing and cleanup before modeling",
+        "PCA-driven dimensionality reduction",
+        "Model comparison for interpretability"
+      ],
+      "details": [
+        {
+          "title": "Preprocessing",
+          "content": "The work emphasized cleaning, transforming, and standardizing data before applying regression and PCA-based comparisons."
+        },
+        {
+          "title": "Analysis Goal",
+          "content": "The project explores the trade-offs between simpler component-based models and richer original-feature models."
         }
       ]
     }
@@ -202,20 +338,22 @@
     "fileName": "Tanush_Modem_Mahesh_Resume.pdf",
     "education": [
       {
-        "title": "B.Tech. Computer Science & Engineering",
-        "subtitle": "B.S. Abdur Rahman Crescent Institute of Science & Technology, Chennai (2021 - 2025)",
-        "result": "9.38 GPA"
+        "title": "B.Tech in Computer Science and Engineering",
+        "subtitle": "BSA Crescent Institute (2021 - 2025)",
+        "result": "9.38 / 10"
+      },
+      {
+        "title": "Higher Secondary - PCM with Computer Science",
+        "subtitle": "New Prince Shree Bhavani School (2019 - 2021)",
+        "result": "7.7 / 10"
       }
     ],
     "highlights": [
-      "Microsoft Azure AI Engineer Associate",
-      "Docker Foundational Professional Certificate (Oct 2024)",
-      "Node.JS and ExpressJS (Sep 2024)",
-      "Amazon S3 Basics - Coursera (May 2024)",
-      "Business English Certificate - Preliminary, Cambridge (Sep 2023)",
-      "Best Manoeuvrable Vehicle - SAE India Dr. G. Padmanabham Memorial Electric Two-Wheeler Design Competition",
-      "One of the department's highest GPAs with a 9.83 in fifth semester",
-      "Solved 400+ DSA problems on LeetCode"
+      "380+ Data Structures and Algorithm questions solved on LeetCode",
+      "Best Manoeuvrable Vehicle Award - SAE India Southern Section (2022)",
+      "Excel Essential Training - LinkedIn Learning (Aug 2023)",
+      "Statistics - 365 Data Science (Nov 2022)",
+      "Business English Certificate - Preliminary, Cambridge (Sep 2023)"
     ]
   },
   "testimonials": [
@@ -231,7 +369,7 @@
   ],
   "contact": {
     "email": "tanushmmofficial@gmail.com",
-    "location": "Chennai, India",
+    "location": "India",
     "availability": "Open to backend, platform, AI tooling, and systems-focused opportunities.",
     "emailjs": {
       "serviceId": "",
