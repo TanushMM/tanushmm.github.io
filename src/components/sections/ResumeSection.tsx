@@ -12,7 +12,7 @@ export default function ResumeSection({ resume }: ResumeSectionProps) {
     <section id="resume" className="section-stack">
       <SectionHeading
         label="My Resume"
-        title="A concise view of my background, academic foundation, and career highlights."
+        title="Resume and highlights."
       />
 
       <div className="resume-grid">

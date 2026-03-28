@@ -88,7 +88,7 @@ export default function MiniGameSection() {
     <section className="section-stack mini-game-section" id="playground">
       <SectionHeading
         label="Playground"
-        title="A tiny focus game before footer. Same glass mood, just a playful finish."
+        title="Quick break."
       />
 
       <GlassPanel className="mini-game-panel">

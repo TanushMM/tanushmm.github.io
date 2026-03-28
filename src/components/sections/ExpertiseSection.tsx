@@ -11,7 +11,7 @@ export default function ExpertiseSection({ items }: ExpertiseSectionProps) {
     <section id="expertise" className="section-stack">
       <SectionHeading
         label="Expertise"
-        title="Technical strengths organized as reusable capability groups."
+        title="Skills and tools."
       />
 
       <div className="card-grid expertise-grid">

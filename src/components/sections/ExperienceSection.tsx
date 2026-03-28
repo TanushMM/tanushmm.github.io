@@ -12,7 +12,7 @@ export default function ExperienceSection({ items }: ExperienceSectionProps) {
     <section id="experience" className="section-stack">
       <SectionHeading
         label="Experience"
-        title="A timeline of backend, AI, and data-focused execution."
+        title="Work experience."
       />
 
       <div className="timeline-list">

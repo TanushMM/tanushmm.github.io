@@ -16,7 +16,7 @@ export default function ContactSection({
     <section id="contact" className="section-stack">
       <SectionHeading
         label="Contact"
-        title="A calm final section for direct outreach and profile handoff."
+        title="Let's connect."
       />
 
       <div className="resume-grid">

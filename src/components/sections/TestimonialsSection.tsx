@@ -14,7 +14,7 @@ export default function TestimonialsSection({
     <section id="testimonials" className="section-stack">
       <SectionHeading
         label="Testimonials"
-        title="Social proof kept honest and grounded in public references."
+        title="What people say."
       />
 
       <div className="testimonial-grid">

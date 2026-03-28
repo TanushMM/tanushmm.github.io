@@ -16,7 +16,7 @@ export default function ProjectsSection({ items }: ProjectsSectionProps) {
     <section id="projects" className="section-stack">
       <SectionHeading
         label="Projects"
-        title="Selected projects across backend systems, cloud builds, and product thinking."
+        title="Selected projects."
       />
 
       <GlassPanel className="project-board">

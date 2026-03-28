@@ -2391,6 +2391,7 @@ button {
   padding: 22px;
   display: grid;
   gap: 14px;
+  border-radius: 30px;
 }
 
 .mini-game-top {
@@ -2417,7 +2418,7 @@ button {
   align-items: center;
   justify-content: center;
   min-height: 52px;
-  border-radius: 18px;
+  border-radius: 24px;
   border: 1px solid color-mix(in srgb, var(--border) 84%, rgba(255, 255, 255, 0.08));
   background:
     radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 46%),

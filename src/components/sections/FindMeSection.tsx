@@ -25,8 +25,7 @@ export default function FindMeSection({ socials }: FindMeSectionProps) {
     <section className="section-stack">
       <SectionHeading
         label="Find Me"
-        title="Public profiles and learning trails that map the work."
-        description="A quick way to explore my writing, learning, problem solving, and professional presence."
+        title="Find me across platforms."
       />
 
       <div className="social-grid">
