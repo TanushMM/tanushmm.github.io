@@ -7,6 +7,7 @@ import ExperienceSection from "./components/sections/ExperienceSection"
 import ExpertiseSection from "./components/sections/ExpertiseSection"
 import FindMeSection from "./components/sections/FindMeSection"
 import IntroductionSection from "./components/sections/IntroductionSection"
+import MiniGameSection from "./components/sections/MiniGameSection"
 import ProjectsSection from "./components/sections/ProjectsSection"
 import ResumeSection from "./components/sections/ResumeSection"
 import TestimonialsSection from "./components/sections/TestimonialsSection"
@@ -39,6 +40,7 @@ function App() {
           contact={portfolio.contact}
           socials={portfolio.socials}
         />
+        <MiniGameSection />
       </main>
 
       <Footer />
