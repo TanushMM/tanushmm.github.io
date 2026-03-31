@@ -191,7 +191,7 @@
       "sectionId": "work",
       "slug": "ai-codegen",
       "title": "AI Code Generation Tool",
-      "eyebrow": "CEI India � Product Work",
+      "eyebrow": "CEI India",
       "description": "Enterprise internal platform that converts requirements into specs, generated code, and validation-ready test runs.",
       "summary": "Built an internal AI coding workflow that reads requirements, drafts structured specs, generates implementation scaffolds, and validates output through automated checks before handoff.",
       "technologies": [
@@ -227,7 +227,7 @@
       "sectionId": "work",
       "slug": "qa-expansion",
       "title": "QA Automation Tool (Expansion \u0026 Infrastructure)",
-      "eyebrow": "CEI India � Platform Scale",
+      "eyebrow": "CEI India",
       "description": "Scaled internal QA automation system organization-wide with multi-agent execution depth, on-prem LLM infrastructure, and productionized delivery.",
       "summary": "Expanded the QA automation platform for wider enterprise use, enabling rapid test generation from screenshots while improving reliability of AI execution through infra and architecture upgrades.",
       "technologies": [
@@ -263,7 +263,7 @@
       "sectionId": "work",
       "slug": "qa-prototype",
       "title": "QA Tool Prototype",
-      "eyebrow": "CEI India � Internship",
+      "eyebrow": "CEI India - Internship",
       "description": "Initial prototype that proved the multi-agent QA approach and unlocked project funding.",
       "summary": "Built the first end-to-end version of the QA automation concept during internship, validating feasibility and creating momentum for full-scale expansion.",
       "technologies": [
@@ -295,7 +295,7 @@
       "sectionId": "work",
       "slug": "hr-analytics",
       "title": "Predictive HR Analytics Project",
-      "eyebrow": "Intervie Tech � Internship",
+      "eyebrow": "Intervie Tech - Internship",
       "description": "Team-delivered predictive analytics project under a strict timeline using Python, Pandas, and Scikit-Learn.",
       "summary": "Worked in a data team to build predictive HR analytics outputs, identify attrition drivers, and ship visual analysis under a tight 2-month delivery window.",
       "technologies": [

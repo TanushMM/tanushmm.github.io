@@ -60,7 +60,7 @@ export default function IntroductionSection({
           <GlassPanel className="hero-copy">
             <div className="eyebrow">
               <Sparkles size={14} />
-              Software Engineer Portfolio
+              Software Engineer by Profession, Finance Enthusiast by Hobby
             </div>
             <h1>
               Hello, I&apos;m <span>{intro.name}</span>
@@ -77,7 +77,7 @@ export default function IntroductionSection({
 
             <div className="cta-row">
               <a href="#projects" className="primary-cta">
-                View Selected Work
+                View Work
               </a>
               <a href="#contact" className="secondary-cta">
                 Let&apos;s Connect
