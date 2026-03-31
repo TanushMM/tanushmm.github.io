@@ -2048,6 +2048,7 @@ button {
 }
 
 .tab {
+  font: inherit;
   padding: 8px 12px;
   border-radius: 999px;
   background-color: color-mix(in srgb, var(--panel) 30%, transparent);
@@ -2089,6 +2090,7 @@ button {
   font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  cursor: pointer;
 }
 
 .tab.active {
@@ -2176,6 +2178,11 @@ button {
 .project-topline {
   justify-content: space-between;
   margin-bottom: 14px;
+}
+
+.pill-row.compact-pills {
+  margin: 0;
+  gap: 6px;
 }
 
 .pill-row {

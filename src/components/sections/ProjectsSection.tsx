@@ -1,16 +1,28 @@
 import { ExternalLink, Globe } from "lucide-react"
 import { useState } from "react"
-import type { ProjectItem } from "../../types/portfolio"
+import type { ProjectItem, ProjectSection } from "../../types/portfolio"
 import GlassPanel from "../ui/GlassPanel"
 import ProjectDetailModal from "../ui/ProjectDetailModal"
 import SectionHeading from "../ui/SectionHeading"
 
 interface ProjectsSectionProps {
   items: ProjectItem[]
+  sections: ProjectSection[]
 }
 
-export default function ProjectsSection({ items }: ProjectsSectionProps) {
+export default function ProjectsSection({
+  items,
+  sections,
+}: ProjectsSectionProps) {
   const [activeProject, setActiveProject] = useState<ProjectItem | null>(null)
+  const [activeSectionId, setActiveSectionId] = useState(
+    sections[0]?.id ?? "work",
+  )
+
+  const activeSection = sections.find((section) => section.id === activeSectionId)
+  const filteredProjects = items.filter(
+    (project) => project.sectionId === activeSectionId,
+  )
 
   return (
     <section id="projects" className="section-stack">
@@ -21,21 +33,35 @@ export default function ProjectsSection({ items }: ProjectsSectionProps) {
 
       <GlassPanel className="project-board">
         <div className="board-tabs">
-          <span className="tab active">Featured</span>
-          <span className="tab">Systems</span>
-          <span className="tab">Cloud</span>
-          <span className="tab">Data</span>
+          {sections.map((section) => (
+            <button
+              key={section.id}
+              type="button"
+              className={`tab ${section.id === activeSectionId ? "active" : ""}`}
+              onClick={() => setActiveSectionId(section.id)}
+            >
+              {section.label}
+            </button>
+          ))}
         </div>
 
         <div className="project-grid">
-          {items.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <article
               key={project.id}
               className={`project-card ${index === 0 ? "project-card-wide" : ""}`}
             >
               <div className="project-topline">
                 <span className="card-kicker">{project.eyebrow}</span>
-                <span className="tiny-badge">{project.slug}</span>
+                <div className="pill-row compact-pills">
+                  {activeSection?.projectPillLabel &&
+                  activeSection?.projectPillAnchor ? (
+                    <a href={activeSection.projectPillAnchor} className="tiny-badge">
+                      {activeSection.projectPillLabel}
+                    </a>
+                  ) : null}
+                  <span className="tiny-badge">{project.slug}</span>
+                </div>
               </div>
 
               <h3>{project.title}</h3>
@@ -81,6 +107,12 @@ export default function ProjectsSection({ items }: ProjectsSectionProps) {
               </div>
             </article>
           ))}
+          {filteredProjects.length === 0 ? (
+            <article className="project-card project-card-wide">
+              <h3>No projects in this section yet.</h3>
+              <p>Update `projectSections` and `projects` in data to add entries.</p>
+            </article>
+          ) : null}
         </div>
       </GlassPanel>
 

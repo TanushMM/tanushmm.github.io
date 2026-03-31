@@ -33,7 +33,10 @@ function App() {
         <FindMeSection socials={portfolio.socials} />
         <ExperienceSection items={portfolio.experience} />
         <ExpertiseSection items={portfolio.expertise} />
-        <ProjectsSection items={portfolio.projects} />
+        <ProjectsSection
+          items={portfolio.projects}
+          sections={portfolio.projectSections}
+        />
         <ResumeSection resume={portfolio.resume} />
         <TestimonialsSection items={portfolio.testimonials} />
         <ContactSection

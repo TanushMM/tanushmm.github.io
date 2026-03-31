@@ -49,6 +49,7 @@ export interface ProjectDetailBlock {
 
 export interface ProjectItem {
   id: string
+  sectionId: string
   slug: string
   title: string
   eyebrow: string
@@ -58,6 +59,13 @@ export interface ProjectItem {
   links: ProjectLinkSet
   highlights: string[]
   details: ProjectDetailBlock[]
+}
+
+export interface ProjectSection {
+  id: string
+  label: string
+  projectPillLabel?: string
+  projectPillAnchor?: string
 }
 
 export interface ResumeEducation {
@@ -99,6 +107,7 @@ export interface PortfolioData {
   socials: Socials
   experience: ExperienceItem[]
   expertise: ExpertiseItem[]
+  projectSections: ProjectSection[]
   projects: ProjectItem[]
   resume: ResumeData
   testimonials: TestimonialItem[]
